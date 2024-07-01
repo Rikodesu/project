@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1717753449562">
+  <ports id="1" name="OutPadConv0" type="PortType" coreName="RAM_1WnR" coreId="3604977416" bitwidth="16" direction="DirOut" iftype="IfTypeRegister" arraysize="324">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="2" name="InModel" type="PortType" coreName="RAM" coreId="3604975848" bitwidth="16" iftype="IfTypeRegister" arraysize="320">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <edges id="37" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="38" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="39" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="40" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="43" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="46" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="47" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="48" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="49" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="52" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="56" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="59" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="62" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="63" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="64" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@ports.0"/>
+  <edges id="67" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="68" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="71" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="72" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="74" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="75" source_obj="//@regions.0/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="76" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="79" source_obj="//@regions.0/@basic_blocks.1/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="80" source_obj="//@regions.0/@basic_blocks.1/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.11"/>
+  <edges id="81" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.11"/>
+  <edges id="82" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="83" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="84" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <edges id="126" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="127" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="128" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="129" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="130" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="131" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="132" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <blocks id="7" name="newFuncRoot" type="BlockType">
+    <controlOutputObjs>for.body4.i</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="3" name="n" lineNumber="7" originalName="n" fileName="Conv.cpp" fileDirectory="../." coreId="0" contextFuncName="Padding_Conv1D_0" bitwidth="9" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="CNN.cpp" linenumber="31" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="CNN"/>
+      <inlineStackInfo fileName="Conv.cpp" linenumber="7" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="Padding_Conv1D_0"/>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="n_write_ln7" lineNumber="7" fileName="Conv.cpp" fileDirectory="../." coreId="0" contextFuncName="Padding_Conv1D_0" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="CNN.cpp" linenumber="31" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="CNN"/>
+      <inlineStackInfo fileName="Conv.cpp" linenumber="7" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="Padding_Conv1D_0"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="br_ln0" coreId="1295780106" opcode="br" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <controlInputObjs>for.body4.i</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="Conv.cpp">
+      <validLinenumbers>7</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="CNN.cpp">
+      <validLinenumbers>31</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="32" name="for.body4.i1.preheader.exitStub" type="BlockType">
+    <controlInputObjs>for.body4.i</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="_ln0" coreId="0" opcode="ret" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1"/>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="122" pipe_depth="2" RegionName="loop_for_channel_pad_0">
+    <basic_blocks id="12" name="for.body4.i" type="BlockType">
+      <controlInputObjs>newFuncRoot</controlInputObjs>
+      <controlInputObjs>for.body4.i.split_ifconv</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.body4.i1.preheader.exitStub</controlOutputObjs>
+      <controlOutputObjs>for.body4.i.split_ifconv</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="8" name="n_1" lineNumber="8" originalName="n" fileName="Conv.cpp" fileDirectory="../." coreId="544108393" contextFuncName="Padding_Conv1D_0" bitwidth="9" opcode="load" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="CNN.cpp" linenumber="31" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="CNN"/>
+        <inlineStackInfo fileName="Conv.cpp" linenumber="8" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="Padding_Conv1D_0"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="9" name="icmp_ln7" lineNumber="7" fileName="Conv.cpp" fileDirectory="../." rtlName="icmp_ln7_fu_84_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="Padding_Conv1D_0" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.77" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="CNN.cpp" linenumber="31" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="CNN"/>
+        <inlineStackInfo fileName="Conv.cpp" linenumber="7" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="Padding_Conv1D_0"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="10" name="add_ln7" lineNumber="7" fileName="Conv.cpp" fileDirectory="../." rtlName="add_ln7_fu_90_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="Padding_Conv1D_0" bitwidth="9" opcode="add" m_display="0" m_delay="0.77" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="CNN.cpp" linenumber="31" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="CNN"/>
+        <inlineStackInfo fileName="Conv.cpp" linenumber="7" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="Padding_Conv1D_0"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="11" name="br_ln7" lineNumber="7" fileName="Conv.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="Padding_Conv1D_0" opcode="br" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="CNN.cpp" linenumber="31" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="CNN"/>
+        <inlineStackInfo fileName="Conv.cpp" linenumber="7" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="Padding_Conv1D_0"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>for.body4.i.split_ifconv</controlInputObjs>
+        <controlInputObjs>for.body4.i1.preheader.exitStub</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="Conv.cpp">
+        <validLinenumbers>8</validLinenumbers>
+        <validLinenumbers>7</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="CNN.cpp">
+        <validLinenumbers>31</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="30" name="for.body4.i.split_ifconv" type="BlockType">
+      <controlInputObjs>for.body4.i</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.body4.i</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="zext_ln7" lineNumber="7" fileName="Conv.cpp" fileDirectory="../." rtlName="zext_ln7_fu_112_p1" coreId="1734439968" contextFuncName="Padding_Conv1D_0" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="CNN.cpp" linenumber="31" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="CNN"/>
+        <inlineStackInfo fileName="Conv.cpp" linenumber="7" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="Padding_Conv1D_0"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="tmp" lineNumber="8" fileName="Conv.cpp" fileDirectory="../." rtlName="tmp_fu_116_p4" coreId="4294967295" contextFuncName="Padding_Conv1D_0" bitwidth="8" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="CNN.cpp" linenumber="31" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="CNN"/>
+        <inlineStackInfo fileName="Conv.cpp" linenumber="8" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="Padding_Conv1D_0"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="icmp_ln8" lineNumber="8" fileName="Conv.cpp" fileDirectory="../." rtlName="icmp_ln8_fu_125_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="Padding_Conv1D_0" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.76" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="CNN.cpp" linenumber="31" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="CNN"/>
+        <inlineStackInfo fileName="Conv.cpp" linenumber="8" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="Padding_Conv1D_0"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="icmp_ln8_1" lineNumber="8" fileName="Conv.cpp" fileDirectory="../." rtlName="icmp_ln8_1_fu_131_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="Padding_Conv1D_0" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.77" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="CNN.cpp" linenumber="31" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="CNN"/>
+        <inlineStackInfo fileName="Conv.cpp" linenumber="8" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="Padding_Conv1D_0"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="or_ln8" lineNumber="8" fileName="Conv.cpp" fileDirectory="../." rtlName="or_ln8_fu_136_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="Padding_Conv1D_0" bitwidth="1" opcode="or" nodeLabel="1.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="CNN.cpp" linenumber="31" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="CNN"/>
+        <inlineStackInfo fileName="Conv.cpp" linenumber="8" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="Padding_Conv1D_0"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="OutPadConv0_addr" lineNumber="8" fileName="Conv.cpp" fileDirectory="../." coreId="1881145423" contextFuncName="Padding_Conv1D_0" bitwidth="9" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="CNN.cpp" linenumber="31" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="CNN"/>
+        <inlineStackInfo fileName="Conv.cpp" linenumber="8" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="Padding_Conv1D_0"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>OutPadConv0</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="add_ln8" lineNumber="8" fileName="Conv.cpp" fileDirectory="../." rtlName="add_ln8_fu_96_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="Padding_Conv1D_0" bitwidth="9" opcode="add" m_display="0" m_delay="0.77" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="CNN.cpp" linenumber="31" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="CNN"/>
+        <inlineStackInfo fileName="Conv.cpp" linenumber="8" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="Padding_Conv1D_0"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="zext_ln8" lineNumber="8" fileName="Conv.cpp" fileDirectory="../." rtlName="zext_ln8_fu_102_p1" coreId="35" contextFuncName="Padding_Conv1D_0" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="CNN.cpp" linenumber="31" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="CNN"/>
+        <inlineStackInfo fileName="Conv.cpp" linenumber="8" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="Padding_Conv1D_0"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="InModel_addr" lineNumber="8" fileName="Conv.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="Padding_Conv1D_0" bitwidth="9" opcode="getelementptr" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="CNN.cpp" linenumber="31" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="CNN"/>
+        <inlineStackInfo fileName="Conv.cpp" linenumber="8" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="Padding_Conv1D_0"/>
+        <dataInputObjs>InModel</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="InModel_load" lineNumber="8" fileName="Conv.cpp" fileDirectory="../." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="83" contextFuncName="Padding_Conv1D_0" bitwidth="16" opcode="load" nodeLatency="1" m_display="0" m_delay="1.23" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="CNN.cpp" linenumber="31" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="CNN"/>
+        <inlineStackInfo fileName="Conv.cpp" linenumber="8" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="Padding_Conv1D_0"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="select_ln8" lineNumber="8" fileName="Conv.cpp" fileDirectory="../." rtlName="OutPadConv0_d0" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="Padding_Conv1D_0" bitwidth="16" opcode="select" nodeLabel="1.0" m_display="0" m_delay="0.35" m_topoIndex="20" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="CNN.cpp" linenumber="31" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="CNN"/>
+        <inlineStackInfo fileName="Conv.cpp" linenumber="8" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="Padding_Conv1D_0"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="OutPadConv0_addr_write_ln8" lineNumber="8" fileName="Conv.cpp" fileDirectory="../." coreName="RAM_1WnR" implIndex="auto" control="no" opType="ram_1wnr" coreId="84" contextFuncName="Padding_Conv1D_0" opcode="store" nodeLabel="1.0" m_display="0" m_delay="1.23" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="CNN.cpp" linenumber="31" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="CNN"/>
+        <inlineStackInfo fileName="Conv.cpp" linenumber="8" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="Padding_Conv1D_0"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="n_write_ln7" lineNumber="7" fileName="Conv.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="Padding_Conv1D_0" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="CNN.cpp" linenumber="31" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="CNN"/>
+        <inlineStackInfo fileName="Conv.cpp" linenumber="7" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="Padding_Conv1D_0"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="br_ln7" lineNumber="7" fileName="Conv.cpp" fileDirectory="../." coreId="3934679314" contextFuncName="Padding_Conv1D_0" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="CNN.cpp" linenumber="31" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="CNN"/>
+        <inlineStackInfo fileName="Conv.cpp" linenumber="7" fileDirectory="F:\Ky2nam3\do_an_1\code\doan1" functionName="Padding_Conv1D_0"/>
+        <controlInputObjs>for.body4.i</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="Conv.cpp">
+        <validLinenumbers>7</validLinenumbers>
+        <validLinenumbers>8</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="CNN.cpp">
+        <validLinenumbers>31</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <regnodes realName="InModel_addr_reg_168">
+    <nodeIds>24</nodeIds>
+  </regnodes>
+  <regnodes realName="n_1_reg_158">
+    <nodeIds>8</nodeIds>
+  </regnodes>
+  <regnodes realName="n_reg_151">
+    <nodeIds>3</nodeIds>
+  </regnodes>
+  <expressionNodes realName="or_ln8_fu_136">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="OutPadConv0_addr_gep_fu_63">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_116">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln8_fu_96">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln8_fu_125">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln8_1_fu_131">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="InModel_addr_gep_fu_50">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln7_fu_90">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="n_fu_46">
+    <nodeIds>3</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln7_fu_112">
+    <nodeIds>13</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln7_fu_84">
+    <nodeIds>9</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln8_fu_102">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln8_fu_142">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="store_ln7_store_fu_107">
+    <nodeIds>28</nodeIds>
+  </ioNodes>
+  <ioNodes realName="n_1_load_fu_81">
+    <nodeIds>8</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln7_store_fu_76">
+    <nodeIds>5</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="InModel">
+    <nodeIds>25</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="OutPadConv0">
+    <nodeIds>27</nodeIds>
+  </memoryPorts>
+  <ioPorts name="InModel(p0)">
+    <contents name="load">
+      <nodeIds>25</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="OutPadConv0(p0)">
+    <contents name="store">
+      <nodeIds>27</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="3" stage="1" latency="1"/>
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="2" latency="2"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="2"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="CNN_Pipeline_loop_for_channel_pad_0" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="326" mMaxLatency="326">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>7</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="loop_for_channel_pad_0" mII="1" mDepth="2" mMinTripCount="324" mMaxTripCount="324" mMinLatency="324" mMaxLatency="324" mType="1">
+      <basicBlocks>12</basicBlocks>
+      <basicBlocks>30</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>32</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

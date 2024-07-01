@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "CNN",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "CNN"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "F:/Ky2nam3/do_an_1/code/doan1/project2/solution2/csynth.tcl",
+    "sourceLine": 23,
+    "success": true
+  }
+]

@@ -1,0 +1,948 @@
+<profile>
+<RunData>
+  <RUN_TYPE>synth</RUN_TYPE>
+  <VIVADO_VERSION>v.2023.1</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>5.000</TargetClockPeriod>
+  <AchievedClockPeriod>3.657</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>3.657</CP_FINAL>
+  <CP_ROUTE>NA</CP_ROUTE>
+  <CP_SYNTH>3.657</CP_SYNTH>
+  <CP_TARGET>5.000</CP_TARGET>
+  <SLACK_FINAL>1.343</SLACK_FINAL>
+  <SLACK_ROUTE></SLACK_ROUTE>
+  <SLACK_SYNTH>1.343</SLACK_SYNTH>
+  <TIMING_MET>TRUE</TIMING_MET>
+  <TNS_FINAL>0.000</TNS_FINAL>
+  <TNS_ROUTE>NA</TNS_ROUTE>
+  <TNS_SYNTH>0.000</TNS_SYNTH>
+  <WNS_FINAL>1.343</WNS_FINAL>
+  <WNS_ROUTE>NA</WNS_ROUTE>
+  <WNS_SYNTH>1.343</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>31</BRAM>
+    <CLB>0</CLB>
+    <DSP>189</DSP>
+    <FF>3163</FF>
+    <LATCH>0</LATCH>
+    <LUT>5080</LUT>
+    <SRL>75</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>288</BRAM>
+    <CLB>0</CLB>
+    <DSP>1248</DSP>
+    <FF>234240</FF>
+    <LUT>117120</LUT>
+    <URAM>64</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="inst" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.v" ORIG_REF_NAME="CNN" TOP_CELL="bd_0_i/hls_inst/inst">
+    <SubModules count="56">OutConv0_U OutConv1_U OutConv2_U OutConv3_U OutConv4_U OutConv5_U OutConv6_U OutConv7_U OutDense0_U OutGlobalAverPool1D_U OutPadConv0_U OutPadConv1_U OutPadConv2_U OutPadConv3_U OutPadConv4_U OutPadConv5_U OutPadConv6_U OutPadConv7_U OutPool0_U OutPool1_U OutPool2_U OutPool3_1_U OutPool3_2_U OutPool3_3_U OutPool3_4_U OutPool3_5_U OutPool3_6_U OutPool3_7_U OutPool3_8_U OutPool3_9_U OutPool3_U grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800 grp_CNN_Pipeline_VITIS_LOOP_145_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5_fu_814 grp_CNN_Pipeline_VITIS_LOOP_15_1_loop_for_ap_0_fu_732 grp_CNN_Pipeline_VITIS_LOOP_171_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6_fu_834 grp_CNN_Pipeline_VITIS_LOOP_197_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7_fu_848 grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746 grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766 grp_CNN_Pipeline_VITIS_LOOP_93_1_fu_871 grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780 grp_CNN_Pipeline_loop_detect_fu_956 grp_CNN_Pipeline_loop_for_3_channel_pad_1_loop_for_channel_pad_1_fu_740 grp_CNN_Pipeline_loop_for_3_channel_pad_2_loop_for_channel_pad_2_fu_760 grp_CNN_Pipeline_loop_for_3_channel_pad_3_loop_for_channel_pad_3_fu_774 grp_CNN_Pipeline_loop_for_3_channel_pad_4_loop_for_channel_pad_4_fu_794 grp_CNN_Pipeline_loop_for_3_channel_pad_5_loop_for_channel_pad_5_fu_808 grp_CNN_Pipeline_loop_for_3_channel_pad_6_loop_for_channel_pad_6_fu_828 grp_CNN_Pipeline_loop_for_3_channel_pad_7_loop_for_channel_pad_7_fu_842 grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886 grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927 grp_CNN_Pipeline_loop_for_channel_pad_0_fu_724 grp_CNN_Pipeline_loop_for_channel_pool_0_loop_for_weight_pool_0_fu_754 grp_CNN_Pipeline_loop_for_channel_pool_1_loop_for_weight_pool_1_fu_788 grp_CNN_Pipeline_loop_for_channel_pool_2_loop_for_weight_pool_2_fu_822 grp_CNN_Pipeline_loop_for_channel_pool_3_loop_for_weight_pool_3_fu_856 out_Dense_U</SubModules>
+    <Resources BRAM="31" DSP="189" FF="3163" LUT="5080" LUTRAM="424" LogicLUT="4581" RAMB18="7" RAMB36="12" SRL="75"/>
+    <LocalResources FF="793" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/OutConv0_U" BINDMODULE="CNN_OutConv0_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_OutConv0_RAM_AUTO_1R1W">
+    <Resources BRAM="2" RAMB36="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/OutConv1_U" BINDMODULE="CNN_OutConv1_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_OutConv1_RAM_AUTO_1R1W">
+    <Resources BRAM="2" LUT="26" LogicLUT="26" RAMB36="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/OutConv2_U" BINDMODULE="CNN_OutConv0_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_OutConv0_RAM_AUTO_1R1W">
+    <Resources BRAM="2" RAMB36="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/OutConv3_U" BINDMODULE="CNN_OutConv1_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_OutConv1_RAM_AUTO_1R1W">
+    <Resources BRAM="2" LUT="25" LogicLUT="25" RAMB36="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/OutConv4_U" BINDMODULE="CNN_OutConv0_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_OutConv0_RAM_AUTO_1R1W">
+    <Resources BRAM="2" RAMB36="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/OutConv5_U" BINDMODULE="CNN_OutConv1_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_OutConv1_RAM_AUTO_1R1W">
+    <Resources BRAM="2" LUT="25" LogicLUT="25" RAMB36="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/OutConv6_U" BINDMODULE="CNN_OutConv0_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_OutConv0_RAM_AUTO_1R1W">
+    <Resources BRAM="2" LUT="8" LogicLUT="8" RAMB36="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/OutConv7_U" BINDMODULE="CNN_OutConv1_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_OutConv1_RAM_AUTO_1R1W">
+    <Resources BRAM="2" LUT="33" LogicLUT="33" RAMB36="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/OutDense0_U" BINDMODULE="CNN_OutDense0_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_OutDense0_RAM_AUTO_1R1W">
+    <Resources FF="32" LUT="97" LUTRAM="64" LogicLUT="33"/>
+  </RtlModule>
+  <RtlModule CELL="inst/OutGlobalAverPool1D_U" BINDMODULE="CNN_OutGlobalAverPool1D_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_OutGlobalAverPool1D_RAM_AUTO_1R1W">
+    <Resources FF="24" LUT="39" LUTRAM="24" LogicLUT="15"/>
+  </RtlModule>
+  <RtlModule CELL="inst/OutPadConv0_U" BINDMODULE="CNN_OutPadConv0_RAM_1WNR_AUTO_1R1W" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_OutPadConv0_RAM_1WNR_AUTO_1R1W">
+    <Resources BRAM="1" LUT="8" LogicLUT="8" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/OutPadConv1_U" BINDMODULE="CNN_OutPadConv1_RAM_1WNR_AUTO_1R1W" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_OutPadConv1_RAM_1WNR_AUTO_1R1W">
+    <Resources BRAM="2" LUT="32" LogicLUT="32" RAMB36="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/OutPadConv2_U" BINDMODULE="CNN_OutPadConv2_RAM_1WNR_AUTO_1R1W" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_OutPadConv2_RAM_1WNR_AUTO_1R1W">
+    <Resources BRAM="1" LUT="16" LogicLUT="16" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/OutPadConv3_U" BINDMODULE="CNN_OutPadConv3_RAM_1WNR_AUTO_1R1W" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_OutPadConv3_RAM_1WNR_AUTO_1R1W">
+    <Resources BRAM="2" LUT="32" LogicLUT="32" RAMB36="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/OutPadConv4_U" BINDMODULE="CNN_OutPadConv4_RAM_1WNR_AUTO_1R1W" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_OutPadConv4_RAM_1WNR_AUTO_1R1W">
+    <Resources BRAM="1" LUT="32" LogicLUT="32" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/OutPadConv5_U" BINDMODULE="CNN_OutPadConv5_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_OutPadConv5_RAM_AUTO_1R1W">
+    <Resources BRAM="2" RAMB36="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/OutPadConv6_U" BINDMODULE="CNN_OutPadConv6_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_OutPadConv6_RAM_AUTO_1R1W">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/OutPadConv7_U" BINDMODULE="CNN_OutPadConv7_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_OutPadConv7_RAM_AUTO_1R1W">
+    <Resources BRAM="2" RAMB36="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/OutPool0_U" BINDMODULE="CNN_OutPool0_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_OutPool0_RAM_AUTO_1R1W">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/OutPool1_U" BINDMODULE="CNN_OutPool0_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_OutPool0_RAM_AUTO_1R1W">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/OutPool2_U" BINDMODULE="CNN_OutPool0_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_OutPool0_RAM_AUTO_1R1W">
+    <Resources BRAM="1" LUT="8" LogicLUT="8" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/OutPool3_1_U" BINDMODULE="CNN_OutPool3_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_OutPool3_RAM_AUTO_1R1W">
+    <Resources FF="32" LUT="32" LUTRAM="32"/>
+  </RtlModule>
+  <RtlModule CELL="inst/OutPool3_2_U" BINDMODULE="CNN_OutPool3_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_OutPool3_RAM_AUTO_1R1W">
+    <Resources FF="32" LUT="32" LUTRAM="32"/>
+  </RtlModule>
+  <RtlModule CELL="inst/OutPool3_3_U" BINDMODULE="CNN_OutPool3_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_OutPool3_RAM_AUTO_1R1W">
+    <Resources FF="32" LUT="32" LUTRAM="32"/>
+  </RtlModule>
+  <RtlModule CELL="inst/OutPool3_4_U" BINDMODULE="CNN_OutPool3_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_OutPool3_RAM_AUTO_1R1W">
+    <Resources FF="32" LUT="34" LUTRAM="32" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/OutPool3_5_U" BINDMODULE="CNN_OutPool3_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_OutPool3_RAM_AUTO_1R1W">
+    <Resources FF="32" LUT="44" LUTRAM="32" LogicLUT="12"/>
+  </RtlModule>
+  <RtlModule CELL="inst/OutPool3_6_U" BINDMODULE="CNN_OutPool3_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_OutPool3_RAM_AUTO_1R1W">
+    <Resources FF="32" LUT="33" LUTRAM="32" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/OutPool3_7_U" BINDMODULE="CNN_OutPool3_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_OutPool3_RAM_AUTO_1R1W">
+    <Resources FF="32" LUT="33" LUTRAM="32" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/OutPool3_8_U" BINDMODULE="CNN_OutPool3_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_OutPool3_RAM_AUTO_1R1W">
+    <Resources FF="32" LUT="33" LUTRAM="32" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/OutPool3_9_U" BINDMODULE="CNN_OutPool3_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_OutPool3_RAM_AUTO_1R1W">
+    <Resources FF="32" LUT="33" LUTRAM="32" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/OutPool3_U" BINDMODULE="CNN_OutPool3_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_OutPool3_RAM_AUTO_1R1W">
+    <Resources FF="32" LUT="33" LUTRAM="32" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4">
+    <SubModules count="40">flow_control_loop_pipe_sequential_init_U mac_muladd_16s_16s_24ns_24_4_1_U123 mac_muladd_16s_16s_24ns_24_4_1_U124 mac_muladd_16s_16s_24ns_24_4_1_U125 mac_muladd_16s_16s_24ns_24_4_1_U126 mac_muladd_16s_16s_24ns_24_4_1_U127 mac_muladd_16s_16s_24ns_24_4_1_U128 mac_muladd_16s_16s_24ns_24_4_1_U129 mac_muladd_16s_16s_24ns_24_4_1_U130 mac_muladd_16s_16s_24ns_24_4_1_U131 mac_muladd_16s_16s_24ns_24_4_1_U132 mac_muladd_16s_16s_24ns_24_4_1_U133 mac_muladd_16s_16s_24ns_24_4_1_U134 mac_muladd_16s_16s_24ns_24_4_1_U135 mac_muladd_16s_16s_24ns_24_4_1_U136 mac_muladd_16s_16s_24ns_24_4_1_U137 mac_muladd_16s_16s_24ns_24_4_1_U138 mac_muladd_16s_16s_24ns_24_4_1_U139 mac_muladd_16s_16s_24ns_24_4_1_U140 mac_muladd_16s_16s_24ns_24_4_1_U141 mac_muladd_16s_16s_24ns_24_4_1_U142 mac_muladd_16s_16s_24ns_24_4_1_U143 mac_muladd_16s_16s_24ns_24_4_1_U144 mac_muladd_16s_16s_24ns_24_4_1_U145 mac_muladd_16s_16s_24ns_24_4_1_U146 mac_muladd_16s_16s_24ns_24_4_1_U147 mac_muladd_16s_16s_24ns_24_4_1_U148 mac_muladd_16s_16s_24ns_24_4_1_U149 mac_muladd_16s_16s_24ns_24_4_1_U150 mac_muladd_16s_16s_24ns_24_4_1_U151 mac_muladd_16s_16s_24ns_24_4_1_U152 mac_muladd_16s_16s_24ns_24_4_1_U153 mac_muladd_16s_16s_24ns_24_4_1_U154 mac_muladd_16s_16s_24ns_24_4_1_U155 mac_muladd_16s_16s_24ns_24_4_1_U156 mac_muladd_16s_16s_24ns_24_4_1_U157 mac_muladd_16s_16s_24ns_24_4_1_U158 mac_muladd_16s_16s_24ns_24_4_1_U159 mac_muladd_16s_16s_24ns_24_4_1_U160 mac_muladd_16s_16s_24ns_24_4_1_U161</SubModules>
+    <Resources DSP="40" FF="147" LUT="677" LogicLUT="677"/>
+    <LocalResources DSP="1" FF="145" LUT="427" LogicLUT="427"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/flow_control_loop_pipe_sequential_init_U" BINDMODULE="CNN_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="77" LogicLUT="77"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U123" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U124" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U125" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U126" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U127" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U128" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U129" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U130" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U131" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U132" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U133" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U134" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="19" LogicLUT="19"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U135" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U136" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="18" LogicLUT="18"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U137" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U138" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="10" LogicLUT="10"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U139" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U140" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="11" LogicLUT="11"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U141" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U142" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="26" LogicLUT="26"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U143" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U144" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="17" LogicLUT="17"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U145" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U146" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="9" LogicLUT="9"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U147" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U148" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U149" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U150" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="9" LogicLUT="9"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U151" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U152" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U153" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U154" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U155" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U156" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U157" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U158" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U159" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U160" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U161" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="41" LogicLUT="41"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_145_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5_fu_814" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_CNN_Pipeline_VITIS_LOOP_145_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5">
+    <SubModules count="3">flow_control_loop_pipe_sequential_init_U mac_muladd_16s_16s_24ns_24_4_1_U170 mac_muladd_5ns_7ns_7ns_11_4_1_U169</SubModules>
+    <Resources DSP="2" FF="167" LUT="189" LogicLUT="169" SRL="20"/>
+    <LocalResources FF="165" LUT="110" LogicLUT="90" SRL="20"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_145_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5_fu_814/flow_control_loop_pipe_sequential_init_U" BINDMODULE="CNN_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_145_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5.v" ORIG_REF_NAME="CNN_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_145_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5_fu_814/mac_muladd_16s_16s_24ns_24_4_1_U170" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_145_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="56" LogicLUT="56"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_145_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5_fu_814/mac_muladd_5ns_7ns_7ns_11_4_1_U169" BINDMODULE="CNN_mac_muladd_5ns_7ns_7ns_11_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_145_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5.v" ORIG_REF_NAME="CNN_mac_muladd_5ns_7ns_7ns_11_4_1">
+    <Resources DSP="1" LUT="18" LogicLUT="18"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_15_1_loop_for_ap_0_fu_732" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_CNN_Pipeline_VITIS_LOOP_15_1_loop_for_ap_0">
+    <SubModules count="5">flow_control_loop_pipe_sequential_init_U mac_muladd_16s_16s_24ns_24_4_1_U4 mac_muladd_16s_16s_24ns_24_4_1_U5 mac_muladd_16s_16s_24ns_24_4_1_U6 mac_muladd_16s_16s_24ns_24_4_1_U7</SubModules>
+    <Resources DSP="5" FF="90" LUT="175" LogicLUT="175"/>
+    <LocalResources DSP="1" FF="88" LUT="54" LogicLUT="54"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_15_1_loop_for_ap_0_fu_732/flow_control_loop_pipe_sequential_init_U" BINDMODULE="CNN_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_15_1_loop_for_ap_0.v" ORIG_REF_NAME="CNN_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="61" LogicLUT="61"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_15_1_loop_for_ap_0_fu_732/mac_muladd_16s_16s_24ns_24_4_1_U4" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_15_1_loop_for_ap_0.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_15_1_loop_for_ap_0_fu_732/mac_muladd_16s_16s_24ns_24_4_1_U5" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_15_1_loop_for_ap_0.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_15_1_loop_for_ap_0_fu_732/mac_muladd_16s_16s_24ns_24_4_1_U6" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_15_1_loop_for_ap_0.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="18" LogicLUT="18"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_15_1_loop_for_ap_0_fu_732/mac_muladd_16s_16s_24ns_24_4_1_U7" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_15_1_loop_for_ap_0.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="41" LogicLUT="41"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_171_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6_fu_834" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_CNN_Pipeline_VITIS_LOOP_171_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6">
+    <SubModules count="3">flow_control_loop_pipe_sequential_init_U mac_muladd_16s_16s_24ns_24_4_1_U181 mac_muladd_5ns_6ns_6ns_10_4_1_U180</SubModules>
+    <Resources DSP="2" FF="168" LUT="183" LogicLUT="167" SRL="16"/>
+    <LocalResources FF="166" LUT="106" LogicLUT="90" SRL="16"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_171_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6_fu_834/flow_control_loop_pipe_sequential_init_U" BINDMODULE="CNN_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_171_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6.v" ORIG_REF_NAME="CNN_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="4" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_171_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6_fu_834/mac_muladd_16s_16s_24ns_24_4_1_U181" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_171_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="56" LogicLUT="56"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_171_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6_fu_834/mac_muladd_5ns_6ns_6ns_10_4_1_U180" BINDMODULE="CNN_mac_muladd_5ns_6ns_6ns_10_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_171_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6.v" ORIG_REF_NAME="CNN_mac_muladd_5ns_6ns_6ns_10_4_1">
+    <Resources DSP="1" LUT="17" LogicLUT="17"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_197_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7_fu_848" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_CNN_Pipeline_VITIS_LOOP_197_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7">
+    <SubModules count="3">flow_control_loop_pipe_sequential_init_U mac_muladd_16s_16s_24ns_24_4_1_U190 mac_muladd_6ns_6ns_6ns_11_4_1_U189</SubModules>
+    <Resources DSP="2" FF="176" LUT="198" LogicLUT="177" SRL="21"/>
+    <LocalResources FF="174" LUT="119" LogicLUT="98" SRL="21"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_197_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7_fu_848/flow_control_loop_pipe_sequential_init_U" BINDMODULE="CNN_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_197_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7.v" ORIG_REF_NAME="CNN_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="4" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_197_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7_fu_848/mac_muladd_16s_16s_24ns_24_4_1_U190" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_197_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="56" LogicLUT="56"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_197_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7_fu_848/mac_muladd_6ns_6ns_6ns_11_4_1_U189" BINDMODULE="CNN_mac_muladd_6ns_6ns_6ns_11_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_197_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7.v" ORIG_REF_NAME="CNN_mac_muladd_6ns_6ns_6ns_11_4_1">
+    <Resources DSP="1" LUT="19" LogicLUT="19"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1">
+    <SubModules count="20">flow_control_loop_pipe_sequential_init_U mac_muladd_16s_16s_24ns_24_4_1_U18 mac_muladd_16s_16s_24ns_24_4_1_U19 mac_muladd_16s_16s_24ns_24_4_1_U20 mac_muladd_16s_16s_24ns_24_4_1_U21 mac_muladd_16s_16s_24ns_24_4_1_U22 mac_muladd_16s_16s_24ns_24_4_1_U23 mac_muladd_16s_16s_24ns_24_4_1_U24 mac_muladd_16s_16s_24ns_24_4_1_U25 mac_muladd_16s_16s_24ns_24_4_1_U26 mac_muladd_16s_16s_24ns_24_4_1_U27 mac_muladd_16s_16s_24ns_24_4_1_U28 mac_muladd_16s_16s_24ns_24_4_1_U29 mac_muladd_16s_16s_24ns_24_4_1_U30 mac_muladd_16s_16s_24ns_24_4_1_U31 mac_muladd_16s_16s_24ns_24_4_1_U32 mac_muladd_16s_16s_24ns_24_4_1_U33 mac_muladd_16s_16s_24ns_24_4_1_U34 mac_muladd_16s_16s_24ns_24_4_1_U35 mac_muladd_16s_16s_24ns_24_4_1_U36</SubModules>
+    <Resources DSP="20" FF="98" LUT="346" LogicLUT="346"/>
+    <LocalResources DSP="1" FF="96" LUT="163" LogicLUT="163"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/flow_control_loop_pipe_sequential_init_U" BINDMODULE="CNN_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1.v" ORIG_REF_NAME="CNN_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="100" LogicLUT="100"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U18" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U19" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U20" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U21" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U22" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U23" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U24" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U25" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U26" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U27" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="10" LogicLUT="10"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U28" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U29" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="9" LogicLUT="9"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U30" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U31" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="10" LogicLUT="10"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U32" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U33" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="9" LogicLUT="9"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U34" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U35" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U36" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="41" LogicLUT="41"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2">
+    <SubModules count="20">flow_control_loop_pipe_sequential_init_U mac_muladd_16s_16s_24ns_24_4_1_U47 mac_muladd_16s_16s_24ns_24_4_1_U48 mac_muladd_16s_16s_24ns_24_4_1_U49 mac_muladd_16s_16s_24ns_24_4_1_U50 mac_muladd_16s_16s_24ns_24_4_1_U51 mac_muladd_16s_16s_24ns_24_4_1_U52 mac_muladd_16s_16s_24ns_24_4_1_U53 mac_muladd_16s_16s_24ns_24_4_1_U54 mac_muladd_16s_16s_24ns_24_4_1_U55 mac_muladd_16s_16s_24ns_24_4_1_U56 mac_muladd_16s_16s_24ns_24_4_1_U57 mac_muladd_16s_16s_24ns_24_4_1_U58 mac_muladd_16s_16s_24ns_24_4_1_U59 mac_muladd_16s_16s_24ns_24_4_1_U60 mac_muladd_16s_16s_24ns_24_4_1_U61 mac_muladd_16s_16s_24ns_24_4_1_U62 mac_muladd_16s_16s_24ns_24_4_1_U63 mac_muladd_16s_16s_24ns_24_4_1_U64 mac_muladd_16s_16s_24ns_24_4_1_U65</SubModules>
+    <Resources DSP="20" FF="127" LUT="424" LogicLUT="424"/>
+    <LocalResources DSP="1" FF="125" LUT="228" LogicLUT="228"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/flow_control_loop_pipe_sequential_init_U" BINDMODULE="CNN_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2.v" ORIG_REF_NAME="CNN_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="78" LogicLUT="78"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U47" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U48" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U49" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U50" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U51" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U52" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="17" LogicLUT="17"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U53" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U54" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U55" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U56" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="18" LogicLUT="18"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U57" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U58" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="9" LogicLUT="9"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U59" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U60" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="18" LogicLUT="18"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U61" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U62" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="9" LogicLUT="9"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U63" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U64" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U65" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="41" LogicLUT="41"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_fu_871" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1">
+    <SubModules count="2">flow_control_loop_pipe_sequential_init_U mul_16s_18ns_34_1_1_U209</SubModules>
+    <Resources DSP="1" FF="75" LUT="275" LogicLUT="274" SRL="1"/>
+    <LocalResources FF="73" LUT="209" LogicLUT="208" SRL="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_fu_871/flow_control_loop_pipe_sequential_init_U" BINDMODULE="CNN_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1.v" ORIG_REF_NAME="CNN_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="19" LogicLUT="19"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_fu_871/mul_16s_18ns_34_1_1_U209" BINDMODULE="CNN_mul_16s_18ns_34_1_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1.v" ORIG_REF_NAME="CNN_mul_16s_18ns_34_1_1">
+    <Resources DSP="1" LUT="47" LogicLUT="47"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3">
+    <SubModules count="40">flow_control_loop_pipe_sequential_init_U mac_muladd_16s_16s_24ns_24_4_1_U100 mac_muladd_16s_16s_24ns_24_4_1_U101 mac_muladd_16s_16s_24ns_24_4_1_U102 mac_muladd_16s_16s_24ns_24_4_1_U103 mac_muladd_16s_16s_24ns_24_4_1_U104 mac_muladd_16s_16s_24ns_24_4_1_U105 mac_muladd_16s_16s_24ns_24_4_1_U106 mac_muladd_16s_16s_24ns_24_4_1_U107 mac_muladd_16s_16s_24ns_24_4_1_U108 mac_muladd_16s_16s_24ns_24_4_1_U109 mac_muladd_16s_16s_24ns_24_4_1_U110 mac_muladd_16s_16s_24ns_24_4_1_U111 mac_muladd_16s_16s_24ns_24_4_1_U112 mac_muladd_16s_16s_24ns_24_4_1_U74 mac_muladd_16s_16s_24ns_24_4_1_U75 mac_muladd_16s_16s_24ns_24_4_1_U76 mac_muladd_16s_16s_24ns_24_4_1_U77 mac_muladd_16s_16s_24ns_24_4_1_U78 mac_muladd_16s_16s_24ns_24_4_1_U79 mac_muladd_16s_16s_24ns_24_4_1_U80 mac_muladd_16s_16s_24ns_24_4_1_U81 mac_muladd_16s_16s_24ns_24_4_1_U82 mac_muladd_16s_16s_24ns_24_4_1_U83 mac_muladd_16s_16s_24ns_24_4_1_U84 mac_muladd_16s_16s_24ns_24_4_1_U85 mac_muladd_16s_16s_24ns_24_4_1_U86 mac_muladd_16s_16s_24ns_24_4_1_U87 mac_muladd_16s_16s_24ns_24_4_1_U88 mac_muladd_16s_16s_24ns_24_4_1_U89 mac_muladd_16s_16s_24ns_24_4_1_U90 mac_muladd_16s_16s_24ns_24_4_1_U91 mac_muladd_16s_16s_24ns_24_4_1_U92 mac_muladd_16s_16s_24ns_24_4_1_U93 mac_muladd_16s_16s_24ns_24_4_1_U94 mac_muladd_16s_16s_24ns_24_4_1_U95 mac_muladd_16s_16s_24ns_24_4_1_U96 mac_muladd_16s_16s_24ns_24_4_1_U97 mac_muladd_16s_16s_24ns_24_4_1_U98 mac_muladd_16s_16s_24ns_24_4_1_U99</SubModules>
+    <Resources DSP="40" FF="134" LUT="704" LogicLUT="704"/>
+    <LocalResources DSP="1" FF="132" LUT="445" LogicLUT="445"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/flow_control_loop_pipe_sequential_init_U" BINDMODULE="CNN_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="86" LogicLUT="86"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U100" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U101" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="9" LogicLUT="9"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U102" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U103" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U104" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U105" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U106" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U107" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U108" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U109" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U110" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U111" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U112" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="41" LogicLUT="41"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U74" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U75" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U76" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U77" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U78" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U79" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U80" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U81" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U82" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U83" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U84" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U85" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="18" LogicLUT="18"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U86" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U87" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="18" LogicLUT="18"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U88" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U89" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="10" LogicLUT="10"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U90" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U91" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="11" LogicLUT="11"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U92" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U93" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="26" LogicLUT="26"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U94" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U95" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="18" LogicLUT="18"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U96" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U97" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="9" LogicLUT="9"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U98" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U99" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_detect_fu_956" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_CNN_Pipeline_loop_detect">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="28" LUT="28" LogicLUT="28"/>
+    <LocalResources FF="26" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_detect_fu_956/flow_control_loop_pipe_sequential_init_U" BINDMODULE="CNN_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_detect.v" ORIG_REF_NAME="CNN_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="27" LogicLUT="27"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_3_channel_pad_1_loop_for_channel_pad_1_fu_740" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_CNN_Pipeline_loop_for_3_channel_pad_1_loop_for_channel_pad_1">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="56" LUT="76" LogicLUT="76"/>
+    <LocalResources FF="54" LUT="46" LogicLUT="46"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_3_channel_pad_1_loop_for_channel_pad_1_fu_740/flow_control_loop_pipe_sequential_init_U" BINDMODULE="CNN_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_3_channel_pad_1_loop_for_channel_pad_1.v" ORIG_REF_NAME="CNN_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="30" LogicLUT="30"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_3_channel_pad_2_loop_for_channel_pad_2_fu_760" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_CNN_Pipeline_loop_for_3_channel_pad_2_loop_for_channel_pad_2">
+    <SubModules count="2">flow_control_loop_pipe_sequential_init_U mul_3ns_9ns_9_1_1_U42</SubModules>
+    <Resources FF="48" LUT="68" LogicLUT="68"/>
+    <LocalResources FF="46" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_3_channel_pad_2_loop_for_channel_pad_2_fu_760/flow_control_loop_pipe_sequential_init_U" BINDMODULE="CNN_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_3_channel_pad_2_loop_for_channel_pad_2.v" ORIG_REF_NAME="CNN_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="28" LogicLUT="28"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_3_channel_pad_2_loop_for_channel_pad_2_fu_760/mul_3ns_9ns_9_1_1_U42" BINDMODULE="CNN_mul_3ns_9ns_9_1_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_3_channel_pad_2_loop_for_channel_pad_2.v" ORIG_REF_NAME="CNN_mul_3ns_9ns_9_1_1">
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_3_channel_pad_3_loop_for_channel_pad_3_fu_774" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_CNN_Pipeline_loop_for_3_channel_pad_3_loop_for_channel_pad_3">
+    <SubModules count="2">flow_control_loop_pipe_sequential_init_U mac_muladd_4ns_8ns_8ns_11_4_1_U69</SubModules>
+    <Resources DSP="1" FF="60" LUT="66" LogicLUT="65" SRL="1"/>
+    <LocalResources FF="58" LUT="29" LogicLUT="28" SRL="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_3_channel_pad_3_loop_for_channel_pad_3_fu_774/flow_control_loop_pipe_sequential_init_U" BINDMODULE="CNN_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_3_channel_pad_3_loop_for_channel_pad_3.v" ORIG_REF_NAME="CNN_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="37" LogicLUT="37"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_3_channel_pad_3_loop_for_channel_pad_3_fu_774/mac_muladd_4ns_8ns_8ns_11_4_1_U69" BINDMODULE="CNN_mac_muladd_4ns_8ns_8ns_11_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_3_channel_pad_3_loop_for_channel_pad_3.v" ORIG_REF_NAME="CNN_mac_muladd_4ns_8ns_8ns_11_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_3_channel_pad_4_loop_for_channel_pad_4_fu_794" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_CNN_Pipeline_loop_for_3_channel_pad_4_loop_for_channel_pad_4">
+    <SubModules count="2">flow_control_loop_pipe_sequential_init_U mac_muladd_4ns_7ns_7ns_10_4_1_U118</SubModules>
+    <Resources DSP="1" FF="55" LUT="64" LogicLUT="63" SRL="1"/>
+    <LocalResources FF="53" LUT="35" LogicLUT="34" SRL="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_3_channel_pad_4_loop_for_channel_pad_4_fu_794/flow_control_loop_pipe_sequential_init_U" BINDMODULE="CNN_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_3_channel_pad_4_loop_for_channel_pad_4.v" ORIG_REF_NAME="CNN_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="26" LogicLUT="26"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_3_channel_pad_4_loop_for_channel_pad_4_fu_794/mac_muladd_4ns_7ns_7ns_10_4_1_U118" BINDMODULE="CNN_mac_muladd_4ns_7ns_7ns_10_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_3_channel_pad_4_loop_for_channel_pad_4.v" ORIG_REF_NAME="CNN_mac_muladd_4ns_7ns_7ns_10_4_1">
+    <Resources DSP="1" LUT="3" LogicLUT="3"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_3_channel_pad_5_loop_for_channel_pad_5_fu_808" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_CNN_Pipeline_loop_for_3_channel_pad_5_loop_for_channel_pad_5">
+    <SubModules count="2">flow_control_loop_pipe_sequential_init_U mac_muladd_5ns_7ns_7ns_11_4_1_U165</SubModules>
+    <Resources DSP="1" FF="59" LUT="61" LogicLUT="60" SRL="1"/>
+    <LocalResources FF="57" LUT="27" LogicLUT="26" SRL="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_3_channel_pad_5_loop_for_channel_pad_5_fu_808/flow_control_loop_pipe_sequential_init_U" BINDMODULE="CNN_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_3_channel_pad_5_loop_for_channel_pad_5.v" ORIG_REF_NAME="CNN_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="33" LogicLUT="33"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_3_channel_pad_5_loop_for_channel_pad_5_fu_808/mac_muladd_5ns_7ns_7ns_11_4_1_U165" BINDMODULE="CNN_mac_muladd_5ns_7ns_7ns_11_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_3_channel_pad_5_loop_for_channel_pad_5.v" ORIG_REF_NAME="CNN_mac_muladd_5ns_7ns_7ns_11_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_3_channel_pad_6_loop_for_channel_pad_6_fu_828" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_CNN_Pipeline_loop_for_3_channel_pad_6_loop_for_channel_pad_6">
+    <SubModules count="2">flow_control_loop_pipe_sequential_init_U mac_muladd_5ns_6ns_6ns_10_4_1_U176</SubModules>
+    <Resources DSP="1" FF="54" LUT="50" LogicLUT="49" SRL="1"/>
+    <LocalResources FF="52" LUT="21" LogicLUT="20" SRL="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_3_channel_pad_6_loop_for_channel_pad_6_fu_828/flow_control_loop_pipe_sequential_init_U" BINDMODULE="CNN_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_3_channel_pad_6_loop_for_channel_pad_6.v" ORIG_REF_NAME="CNN_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="28" LogicLUT="28"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_3_channel_pad_6_loop_for_channel_pad_6_fu_828/mac_muladd_5ns_6ns_6ns_10_4_1_U176" BINDMODULE="CNN_mac_muladd_5ns_6ns_6ns_10_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_3_channel_pad_6_loop_for_channel_pad_6.v" ORIG_REF_NAME="CNN_mac_muladd_5ns_6ns_6ns_10_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_3_channel_pad_7_loop_for_channel_pad_7_fu_842" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_CNN_Pipeline_loop_for_3_channel_pad_7_loop_for_channel_pad_7">
+    <SubModules count="2">flow_control_loop_pipe_sequential_init_U mac_muladd_6ns_6ns_6ns_11_4_1_U185</SubModules>
+    <Resources DSP="1" FF="58" LUT="55" LogicLUT="54" SRL="1"/>
+    <LocalResources FF="56" LUT="25" LogicLUT="24" SRL="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_3_channel_pad_7_loop_for_channel_pad_7_fu_842/flow_control_loop_pipe_sequential_init_U" BINDMODULE="CNN_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_3_channel_pad_7_loop_for_channel_pad_7.v" ORIG_REF_NAME="CNN_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="29" LogicLUT="29"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_3_channel_pad_7_loop_for_channel_pad_7_fu_842/mac_muladd_6ns_6ns_6ns_11_4_1_U185" BINDMODULE="CNN_mac_muladd_6ns_6ns_6ns_11_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_3_channel_pad_7_loop_for_channel_pad_7.v" ORIG_REF_NAME="CNN_mac_muladd_6ns_6ns_6ns_11_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_0">
+    <SubModules count="32">flow_control_loop_pipe_sequential_init_U mac_muladd_16s_12s_24ns_24_4_1_U223 mac_muladd_16s_12s_24ns_24_4_1_U224 mac_muladd_16s_12s_24ns_24_4_1_U225 mac_muladd_16s_12s_24ns_24_4_1_U226 mac_muladd_16s_12s_24ns_24_4_1_U227 mac_muladd_16s_12s_24ns_24_4_1_U228 mac_muladd_16s_12s_24ns_24_4_1_U229 mac_muladd_16s_12s_24ns_24_4_1_U230 mac_muladd_16s_12s_24ns_24_4_1_U231 mac_muladd_16s_12s_24ns_24_4_1_U232 mac_muladd_16s_12s_24ns_24_4_1_U233 mac_muladd_16s_12s_24ns_24_4_1_U234 mac_muladd_16s_12s_24ns_24_4_1_U235 mac_muladd_16s_12s_24ns_24_4_1_U236 mac_muladd_16s_12s_24ns_24_4_1_U237 mac_muladd_16s_12s_24ns_24_4_1_U238 mac_muladd_16s_12s_24ns_24_4_1_U239 mac_muladd_16s_12s_24ns_24_4_1_U240 mac_muladd_16s_12s_24ns_24_4_1_U241 mac_muladd_16s_12s_24ns_24_4_1_U242 mac_muladd_16s_12s_24ns_24_4_1_U243 mac_muladd_16s_12s_24ns_24_4_1_U244 mac_muladd_16s_12s_24ns_24_4_1_U245 mac_muladd_16s_12s_24ns_24_4_1_U246 mac_muladd_16s_12s_24ns_24_4_1_U247 mac_muladd_16s_12s_24ns_24_4_1_U248 mac_muladd_16s_12s_24ns_24_4_1_U249 mac_muladd_16s_12s_24ns_24_4_1_U250 mac_muladd_16s_12s_24ns_24_4_1_U251 mac_muladd_16s_12s_24ns_24_4_1_U252 mac_muladd_16s_12s_24ns_24_4_1_U253</SubModules>
+    <Resources DSP="32" FF="39" LUT="262" LogicLUT="262"/>
+    <LocalResources DSP="1" FF="37" LUT="96" LogicLUT="96"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/flow_control_loop_pipe_sequential_init_U" BINDMODULE="CNN_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_0.v" ORIG_REF_NAME="CNN_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="45" LogicLUT="45"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U223" BINDMODULE="CNN_mac_muladd_16s_12s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_0.v" ORIG_REF_NAME="CNN_mac_muladd_16s_12s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U224" BINDMODULE="CNN_mac_muladd_16s_12s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_0.v" ORIG_REF_NAME="CNN_mac_muladd_16s_12s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U225" BINDMODULE="CNN_mac_muladd_16s_12s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_0.v" ORIG_REF_NAME="CNN_mac_muladd_16s_12s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U226" BINDMODULE="CNN_mac_muladd_16s_12s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_0.v" ORIG_REF_NAME="CNN_mac_muladd_16s_12s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U227" BINDMODULE="CNN_mac_muladd_16s_12s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_0.v" ORIG_REF_NAME="CNN_mac_muladd_16s_12s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U228" BINDMODULE="CNN_mac_muladd_16s_12s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_0.v" ORIG_REF_NAME="CNN_mac_muladd_16s_12s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U229" BINDMODULE="CNN_mac_muladd_16s_12s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_0.v" ORIG_REF_NAME="CNN_mac_muladd_16s_12s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U230" BINDMODULE="CNN_mac_muladd_16s_12s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_0.v" ORIG_REF_NAME="CNN_mac_muladd_16s_12s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U231" BINDMODULE="CNN_mac_muladd_16s_12s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_0.v" ORIG_REF_NAME="CNN_mac_muladd_16s_12s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U232" BINDMODULE="CNN_mac_muladd_16s_12s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_0.v" ORIG_REF_NAME="CNN_mac_muladd_16s_12s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U233" BINDMODULE="CNN_mac_muladd_16s_12s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_0.v" ORIG_REF_NAME="CNN_mac_muladd_16s_12s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U234" BINDMODULE="CNN_mac_muladd_16s_12s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_0.v" ORIG_REF_NAME="CNN_mac_muladd_16s_12s_24ns_24_4_1">
+    <Resources DSP="1" LUT="9" LogicLUT="9"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U235" BINDMODULE="CNN_mac_muladd_16s_12s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_0.v" ORIG_REF_NAME="CNN_mac_muladd_16s_12s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U236" BINDMODULE="CNN_mac_muladd_16s_12s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_0.v" ORIG_REF_NAME="CNN_mac_muladd_16s_12s_24ns_24_4_1">
+    <Resources DSP="1" LUT="18" LogicLUT="18"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U237" BINDMODULE="CNN_mac_muladd_16s_12s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_0.v" ORIG_REF_NAME="CNN_mac_muladd_16s_12s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U238" BINDMODULE="CNN_mac_muladd_16s_12s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_0.v" ORIG_REF_NAME="CNN_mac_muladd_16s_12s_24ns_24_4_1">
+    <Resources DSP="1" LUT="9" LogicLUT="9"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U239" BINDMODULE="CNN_mac_muladd_16s_12s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_0.v" ORIG_REF_NAME="CNN_mac_muladd_16s_12s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U240" BINDMODULE="CNN_mac_muladd_16s_12s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_0.v" ORIG_REF_NAME="CNN_mac_muladd_16s_12s_24ns_24_4_1">
+    <Resources DSP="1" LUT="10" LogicLUT="10"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U241" BINDMODULE="CNN_mac_muladd_16s_12s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_0.v" ORIG_REF_NAME="CNN_mac_muladd_16s_12s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U242" BINDMODULE="CNN_mac_muladd_16s_12s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_0.v" ORIG_REF_NAME="CNN_mac_muladd_16s_12s_24ns_24_4_1">
+    <Resources DSP="1" LUT="9" LogicLUT="9"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U243" BINDMODULE="CNN_mac_muladd_16s_12s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_0.v" ORIG_REF_NAME="CNN_mac_muladd_16s_12s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U244" BINDMODULE="CNN_mac_muladd_16s_12s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_0.v" ORIG_REF_NAME="CNN_mac_muladd_16s_12s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U245" BINDMODULE="CNN_mac_muladd_16s_12s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_0.v" ORIG_REF_NAME="CNN_mac_muladd_16s_12s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U246" BINDMODULE="CNN_mac_muladd_16s_12s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_0.v" ORIG_REF_NAME="CNN_mac_muladd_16s_12s_24ns_24_4_1">
+    <Resources DSP="1" LUT="9" LogicLUT="9"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U247" BINDMODULE="CNN_mac_muladd_16s_12s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_0.v" ORIG_REF_NAME="CNN_mac_muladd_16s_12s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U248" BINDMODULE="CNN_mac_muladd_16s_12s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_0.v" ORIG_REF_NAME="CNN_mac_muladd_16s_12s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U249" BINDMODULE="CNN_mac_muladd_16s_12s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_0.v" ORIG_REF_NAME="CNN_mac_muladd_16s_12s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U250" BINDMODULE="CNN_mac_muladd_16s_12s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_0.v" ORIG_REF_NAME="CNN_mac_muladd_16s_12s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U251" BINDMODULE="CNN_mac_muladd_16s_12s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_0.v" ORIG_REF_NAME="CNN_mac_muladd_16s_12s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U252" BINDMODULE="CNN_mac_muladd_16s_12s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_0.v" ORIG_REF_NAME="CNN_mac_muladd_16s_12s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U253" BINDMODULE="CNN_mac_muladd_16s_12s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_0.v" ORIG_REF_NAME="CNN_mac_muladd_16s_12s_24ns_24_4_1">
+    <Resources DSP="1" LUT="49" LogicLUT="49"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_1">
+    <SubModules count="20">flow_control_loop_pipe_sequential_init_U mac_muladd_16s_16s_24ns_24_4_1_U291 mac_muladd_16s_16s_24ns_24_4_1_U292 mac_muladd_16s_16s_24ns_24_4_1_U293 mac_muladd_16s_16s_24ns_24_4_1_U294 mac_muladd_16s_16s_24ns_24_4_1_U295 mac_muladd_16s_16s_24ns_24_4_1_U296 mac_muladd_16s_16s_24ns_24_4_1_U297 mac_muladd_16s_16s_24ns_24_4_1_U298 mac_muladd_16s_16s_24ns_24_4_1_U299 mac_muladd_16s_16s_24ns_24_4_1_U300 mac_muladd_16s_16s_24ns_24_4_1_U301 mac_muladd_16s_16s_24ns_24_4_1_U302 mac_muladd_16s_16s_24ns_24_4_1_U303 mac_muladd_16s_16s_24ns_24_4_1_U304 mac_muladd_16s_16s_24ns_24_4_1_U305 mac_muladd_16s_16s_24ns_24_4_1_U306 mac_muladd_16s_16s_24ns_24_4_1_U307 mac_muladd_16s_16s_24ns_24_4_1_U308 mac_muladd_16s_16s_24ns_24_4_1_U309</SubModules>
+    <Resources DSP="20" FF="27" LUT="154" LogicLUT="154"/>
+    <LocalResources DSP="1" FF="25" LUT="61" LogicLUT="61"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/flow_control_loop_pipe_sequential_init_U" BINDMODULE="CNN_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_1.v" ORIG_REF_NAME="CNN_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="34" LogicLUT="34"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U291" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U292" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U293" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U294" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U295" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U296" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U297" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U298" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U299" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U300" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="10" LogicLUT="10"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U301" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U302" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="9" LogicLUT="9"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U303" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U304" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="10" LogicLUT="10"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U305" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U306" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="9" LogicLUT="9"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U307" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U308" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U309" BINDMODULE="CNN_mac_muladd_16s_16s_24ns_24_4_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_a_Dense_1.v" ORIG_REF_NAME="CNN_mac_muladd_16s_16s_24ns_24_4_1">
+    <Resources DSP="1" LUT="17" LogicLUT="17"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_channel_pad_0_fu_724" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_CNN_Pipeline_loop_for_channel_pad_0">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="21" LUT="50" LogicLUT="50"/>
+    <LocalResources FF="19" LUT="22" LogicLUT="22"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_channel_pad_0_fu_724/flow_control_loop_pipe_sequential_init_U" BINDMODULE="CNN_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_channel_pad_0.v" ORIG_REF_NAME="CNN_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="28" LogicLUT="28"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_channel_pool_0_loop_for_weight_pool_0_fu_754" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_CNN_Pipeline_loop_for_channel_pool_0_loop_for_weight_pool_0">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="61" LUT="52" LogicLUT="52"/>
+    <LocalResources FF="59" LUT="14" LogicLUT="14"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_channel_pool_0_loop_for_weight_pool_0_fu_754/flow_control_loop_pipe_sequential_init_U" BINDMODULE="CNN_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_channel_pool_0_loop_for_weight_pool_0.v" ORIG_REF_NAME="CNN_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="38" LogicLUT="38"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_channel_pool_1_loop_for_weight_pool_1_fu_788" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_CNN_Pipeline_loop_for_channel_pool_1_loop_for_weight_pool_1">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="73" LUT="48" LogicLUT="48"/>
+    <LocalResources FF="71" LUT="25" LogicLUT="25"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_channel_pool_1_loop_for_weight_pool_1_fu_788/flow_control_loop_pipe_sequential_init_U" BINDMODULE="CNN_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_channel_pool_1_loop_for_weight_pool_1.v" ORIG_REF_NAME="CNN_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="23" LogicLUT="23"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_channel_pool_2_loop_for_weight_pool_2_fu_822" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_CNN_Pipeline_loop_for_channel_pool_2_loop_for_weight_pool_2">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="73" LUT="49" LogicLUT="49"/>
+    <LocalResources FF="71" LUT="30" LogicLUT="30"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_channel_pool_2_loop_for_weight_pool_2_fu_822/flow_control_loop_pipe_sequential_init_U" BINDMODULE="CNN_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_channel_pool_2_loop_for_weight_pool_2.v" ORIG_REF_NAME="CNN_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="19" LogicLUT="19"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_channel_pool_3_loop_for_weight_pool_3_fu_856" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_CNN_Pipeline_loop_for_channel_pool_3_loop_for_weight_pool_3">
+    <SubModules count="2">flow_control_loop_pipe_sequential_init_U urem_5ns_5ns_4_9_1_U194</SubModules>
+    <Resources FF="84" LUT="81" LogicLUT="69" SRL="12"/>
+    <LocalResources FF="68" LUT="36" LogicLUT="29" SRL="7"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_channel_pool_3_loop_for_weight_pool_3_fu_856/flow_control_loop_pipe_sequential_init_U" BINDMODULE="CNN_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_channel_pool_3_loop_for_weight_pool_3.v" ORIG_REF_NAME="CNN_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="20" LogicLUT="20"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_CNN_Pipeline_loop_for_channel_pool_3_loop_for_weight_pool_3_fu_856/urem_5ns_5ns_4_9_1_U194" BINDMODULE="CNN_urem_5ns_5ns_4_9_1" DEPTH="2" FILE_NAME="CNN_CNN_Pipeline_loop_for_channel_pool_3_loop_for_weight_pool_3.v" ORIG_REF_NAME="CNN_urem_5ns_5ns_4_9_1">
+    <Resources FF="14" LUT="25" LogicLUT="20" SRL="5"/>
+    <LocalResources FF="4" LUT="16" LogicLUT="16"/>
+  </RtlModule>
+  <RtlModule CELL="inst/out_Dense_U" BINDMODULE="CNN_out_Dense_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="CNN.v" ORIG_REF_NAME="CNN_out_Dense_RAM_AUTO_1R1W">
+    <Resources FF="16" LUT="24" LUTRAM="16" LogicLUT="8"/>
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="3.585" DATAPATH_LOGIC_DELAY="3.145" DATAPATH_NET_DELAY="0.440" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST/ALU_OUT[16]" LOGIC_LEVELS="5" MAX_FANOUT="49" SLACK="1.343" STARTPOINT_PIN="bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0/CLKBWRCLK">
+    <CELL  NAME="bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" LINE_NUMBER="49"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="3.585" DATAPATH_LOGIC_DELAY="3.145" DATAPATH_NET_DELAY="0.440" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST/ALU_OUT[17]" LOGIC_LEVELS="5" MAX_FANOUT="49" SLACK="1.343" STARTPOINT_PIN="bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0/CLKBWRCLK">
+    <CELL  NAME="bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" LINE_NUMBER="49"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="3.585" DATAPATH_LOGIC_DELAY="3.145" DATAPATH_NET_DELAY="0.440" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST/ALU_OUT[18]" LOGIC_LEVELS="5" MAX_FANOUT="49" SLACK="1.343" STARTPOINT_PIN="bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0/CLKBWRCLK">
+    <CELL  NAME="bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" LINE_NUMBER="49"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="3.585" DATAPATH_LOGIC_DELAY="3.145" DATAPATH_NET_DELAY="0.440" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST/ALU_OUT[19]" LOGIC_LEVELS="5" MAX_FANOUT="49" SLACK="1.343" STARTPOINT_PIN="bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0/CLKBWRCLK">
+    <CELL  NAME="bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" LINE_NUMBER="49"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="3.585" DATAPATH_LOGIC_DELAY="3.145" DATAPATH_NET_DELAY="0.440" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST/ALU_OUT[20]" LOGIC_LEVELS="5" MAX_FANOUT="49" SLACK="1.343" STARTPOINT_PIN="bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0/CLKBWRCLK">
+    <CELL  NAME="bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" LINE_NUMBER="49"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" LINE_NUMBER=""/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="verilog/report/CNN_design_analysis_synth.rpt"/>
+  <ReportFile TYPE="failfast" PATH="verilog/report/CNN_failfast_synth.rpt"/>
+  <ReportFile TYPE="timing" PATH="verilog/report/CNN_timing_synth.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="verilog/report/CNN_timing_paths_synth.rpt"/>
+  <ReportFile TYPE="utilization" PATH="verilog/report/CNN_utilization_synth.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/CNN_utilization_hierarchical_synth.rpt"/>
+</VivadoReportFiles>
+</profile>

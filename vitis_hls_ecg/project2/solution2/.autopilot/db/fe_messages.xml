@@ -1,0 +1,300 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:135:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:140:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="set_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:205:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="keep_all" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:317:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="empty" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:325:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="full" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:334:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:345:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:357:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:368:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:385:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Ky2nam3/do_an_1/code/doan1/project2/solution2/csynth.tcl:23:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="CNN" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=CNN" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:135:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:140:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="set_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:205:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="keep_all" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:317:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="empty" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:325:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="full" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:334:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:345:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:357:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:368:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:385:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:135:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:140:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="set_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:205:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="keep_all" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:317:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="empty" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:325:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="full" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:334:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:345:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:357:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:368:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:385:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:135:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:140:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="set_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:205:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="keep_all" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:317:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="empty" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:325:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="full" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:334:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:345:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:357:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:368:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Vivado/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:385:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Inlining function 'Padding_Conv1D_0(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
+        <args Callee="Padding_Conv1D_0(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File Conv.cpp Line 3 Column 0" Caller="CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File CNN.cpp Line 8 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Inlining function 'Conv1D_0(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
+        <args Callee="Conv1D_0(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File Conv.cpp Line 12 Column 0" Caller="CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File CNN.cpp Line 8 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Inlining function 'Padding_Conv1D_1(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
+        <args Callee="Padding_Conv1D_1(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File Conv.cpp Line 29 Column 0" Caller="CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File CNN.cpp Line 8 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Inlining function 'Conv1D_1(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
+        <args Callee="Conv1D_1(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File Conv.cpp Line 38 Column 0" Caller="CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File CNN.cpp Line 8 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Inlining function 'Max_Pool1D_0(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
+        <args Callee="Max_Pool1D_0(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File Pool.cpp Line 3 Column 0" Caller="CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File CNN.cpp Line 8 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Inlining function 'Padding_Conv1D_2(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
+        <args Callee="Padding_Conv1D_2(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File Conv.cpp Line 55 Column 0" Caller="CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File CNN.cpp Line 8 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Inlining function 'Conv1D_2(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
+        <args Callee="Conv1D_2(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File Conv.cpp Line 64 Column 0" Caller="CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File CNN.cpp Line 8 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Inlining function 'Padding_Conv1D_3(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
+        <args Callee="Padding_Conv1D_3(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File Conv.cpp Line 81 Column 0" Caller="CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File CNN.cpp Line 8 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Inlining function 'Conv1D_3(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
+        <args Callee="Conv1D_3(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File Conv.cpp Line 90 Column 0" Caller="CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File CNN.cpp Line 8 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Inlining function 'Max_Pool1D_1(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
+        <args Callee="Max_Pool1D_1(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File Pool.cpp Line 25 Column 0" Caller="CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File CNN.cpp Line 8 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Inlining function 'Padding_Conv1D_4(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
+        <args Callee="Padding_Conv1D_4(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File Conv.cpp Line 107 Column 0" Caller="CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File CNN.cpp Line 8 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Inlining function 'Conv1D_4(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
+        <args Callee="Conv1D_4(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File Conv.cpp Line 116 Column 0" Caller="CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File CNN.cpp Line 8 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Inlining function 'Padding_Conv1D_5(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
+        <args Callee="Padding_Conv1D_5(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File Conv.cpp Line 133 Column 0" Caller="CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File CNN.cpp Line 8 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Inlining function 'Conv1D_5(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
+        <args Callee="Conv1D_5(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File Conv.cpp Line 142 Column 0" Caller="CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File CNN.cpp Line 8 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Inlining function 'Max_Pool1D_2(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
+        <args Callee="Max_Pool1D_2(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File Pool.cpp Line 47 Column 0" Caller="CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File CNN.cpp Line 8 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Inlining function 'Padding_Conv1D_6(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
+        <args Callee="Padding_Conv1D_6(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File Conv.cpp Line 159 Column 0" Caller="CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File CNN.cpp Line 8 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Inlining function 'Conv1D_6(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
+        <args Callee="Conv1D_6(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File Conv.cpp Line 168 Column 0" Caller="CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File CNN.cpp Line 8 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Inlining function 'Padding_Conv1D_7(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
+        <args Callee="Padding_Conv1D_7(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File Conv.cpp Line 185 Column 0" Caller="CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File CNN.cpp Line 8 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Inlining function 'Conv1D_7(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
+        <args Callee="Conv1D_7(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File Conv.cpp Line 194 Column 0" Caller="CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File CNN.cpp Line 8 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Inlining function 'Max_Pool1D_3(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
+        <args Callee="Max_Pool1D_3(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File Pool.cpp Line 69 Column 0" Caller="CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File CNN.cpp Line 8 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Inlining function 'GlobalAveragePool1D(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
+        <args Callee="GlobalAveragePool1D(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File Pool.cpp Line 91 Column 0" Caller="CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File CNN.cpp Line 8 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Inlining function 'Dense_0(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
+        <args Callee="Dense_0(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File Dense.cpp Line 3 Column 0" Caller="CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File CNN.cpp Line 8 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Inlining function 'Dense_1(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
+        <args Callee="Dense_1(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File Dense.cpp Line 14 Column 0" Caller="CNN(ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File CNN.cpp Line 8 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Dense.cpp:20:3" msg_body="Loop 'loop_for_b_Dense_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="loop_for_b_Dense_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Dense.cpp:8:3" msg_body="Loop 'loop_for_b_Dense_0' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="loop_for_b_Dense_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Pool.cpp:95:20" msg_body="Loop 'VITIS_LOOP_95_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_95_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Pool.cpp:79:21" msg_body="Loop 'VITIS_LOOP_79_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_79_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Pool.cpp:57:21" msg_body="Loop 'VITIS_LOOP_57_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_57_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Conv.cpp:124:4" msg_body="Loop 'loop_for_fc_4' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="loop_for_fc_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Conv.cpp:126:5" msg_body="Loop 'loop_for_fa_4' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="loop_for_fa_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Pool.cpp:35:21" msg_body="Loop 'VITIS_LOOP_35_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_35_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Conv.cpp:98:4" msg_body="Loop 'loop_for_fc_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="loop_for_fc_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Conv.cpp:100:5" msg_body="Loop 'loop_for_fa_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="loop_for_fa_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Conv.cpp:72:4" msg_body="Loop 'loop_for_fc_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="loop_for_fc_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Conv.cpp:74:5" msg_body="Loop 'loop_for_fa_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="loop_for_fa_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Pool.cpp:13:21" msg_body="Loop 'VITIS_LOOP_13_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_13_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Conv.cpp:46:4" msg_body="Loop 'loop_for_fc_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="loop_for_fc_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Conv.cpp:48:5" msg_body="Loop 'loop_for_fa_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="loop_for_fa_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Conv.cpp:22:5" msg_body="Loop 'loop_for_fa_0' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="loop_for_fa_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Unrolling loop 'loop_for_b_Dense_1' (Dense.cpp:20:3) in function 'CNN' completely with a factor of 20">
+        <args Factor="20" LoopLoc="Dense.cpp:20:3" LoopName="loop_for_b_Dense_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Unrolling loop 'loop_for_b_Dense_0' (Dense.cpp:8:3) in function 'CNN' completely with a factor of 32">
+        <args Factor="32" LoopLoc="Dense.cpp:8:3" LoopName="loop_for_b_Dense_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Unrolling loop 'VITIS_LOOP_95_2' (Pool.cpp:95:20) in function 'CNN' completely with a factor of 20">
+        <args Factor="20" LoopLoc="Pool.cpp:95:20" LoopName="VITIS_LOOP_95_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Unrolling loop 'VITIS_LOOP_79_1' (Pool.cpp:79:21) in function 'CNN' completely with a factor of 2">
+        <args Factor="2" LoopLoc="Pool.cpp:79:21" LoopName="VITIS_LOOP_79_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Unrolling loop 'VITIS_LOOP_57_1' (Pool.cpp:57:21) in function 'CNN' completely with a factor of 2">
+        <args Factor="2" LoopLoc="Pool.cpp:57:21" LoopName="VITIS_LOOP_57_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Unrolling loop 'loop_for_fc_4' (Conv.cpp:124:4) in function 'CNN' completely with a factor of 8">
+        <args Factor="8" LoopLoc="Conv.cpp:124:4" LoopName="loop_for_fc_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Unrolling loop 'loop_for_fa_4' (Conv.cpp:126:5) in function 'CNN' completely with a factor of 5">
+        <args Factor="5" LoopLoc="Conv.cpp:126:5" LoopName="loop_for_fa_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Unrolling loop 'VITIS_LOOP_35_1' (Pool.cpp:35:21) in function 'CNN' completely with a factor of 2">
+        <args Factor="2" LoopLoc="Pool.cpp:35:21" LoopName="VITIS_LOOP_35_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Unrolling loop 'loop_for_fc_3' (Conv.cpp:98:4) in function 'CNN' completely with a factor of 8">
+        <args Factor="8" LoopLoc="Conv.cpp:98:4" LoopName="loop_for_fc_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Unrolling loop 'loop_for_fa_3' (Conv.cpp:100:5) in function 'CNN' completely with a factor of 5">
+        <args Factor="5" LoopLoc="Conv.cpp:100:5" LoopName="loop_for_fa_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Unrolling loop 'loop_for_fc_2' (Conv.cpp:72:4) in function 'CNN' completely with a factor of 4">
+        <args Factor="4" LoopLoc="Conv.cpp:72:4" LoopName="loop_for_fc_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Unrolling loop 'loop_for_fa_2' (Conv.cpp:74:5) in function 'CNN' completely with a factor of 5">
+        <args Factor="5" LoopLoc="Conv.cpp:74:5" LoopName="loop_for_fa_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Unrolling loop 'VITIS_LOOP_13_1' (Pool.cpp:13:21) in function 'CNN' completely with a factor of 2">
+        <args Factor="2" LoopLoc="Pool.cpp:13:21" LoopName="VITIS_LOOP_13_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Unrolling loop 'loop_for_fc_1' (Conv.cpp:46:4) in function 'CNN' completely with a factor of 4">
+        <args Factor="4" LoopLoc="Conv.cpp:46:4" LoopName="loop_for_fc_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Unrolling loop 'loop_for_fa_1' (Conv.cpp:48:5) in function 'CNN' completely with a factor of 5">
+        <args Factor="5" LoopLoc="Conv.cpp:48:5" LoopName="loop_for_fa_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN.cpp:8:0" msg_body="Unrolling loop 'loop_for_fa_0' (Conv.cpp:22:5) in function 'CNN' completely with a factor of 5">
+        <args Factor="5" LoopLoc="Conv.cpp:22:5" LoopName="loop_for_fa_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="CNN.cpp:28:6" msg_body="array_partition dim=1 type=cyclic factor=10 variable=OutPool3 1 CNN CNN.cpp:28:6 OutPool3">
+        <args PragmaFunction="CNN" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=10 variable=OutPool3" PragmaType="array_partition" VarName="OutPool3" varLoc="CNN.cpp:28:6"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="CNN.cpp:28:6" msg_body="Inferring pragma 'array_partition type=cyclic factor=10 dim=1' for array 'OutPool3' due to pipeline pragma">
+        <args Dim="1" Factor="10" Mode="cyclic" Name="OutPool3" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="CNN.cpp:28:6" msg_body="Applying array_partition to 'OutPool3': Cyclic partitioning with factor 10 on dimension 1.">
+        <args Dim="1" Factor="10" Mode="Cyclic" UOName="OutPool3"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

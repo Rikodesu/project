@@ -1,0 +1,155 @@
+#-----------------------------------------------------------
+# xsim v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Jun  7 20:21:25 2024
+# Process ID: 23004
+# Current directory: F:/Ky2nam3/do_an_1/code/doan1/project2/solution2/sim/verilog
+# Command line: xsim.exe -source {xsim.dir/CNN/xsim_script.tcl}
+# Log file: F:/Ky2nam3/do_an_1/code/doan1/project2/solution2/sim/verilog/xsim.log
+# Journal file: F:/Ky2nam3/do_an_1/code/doan1/project2/solution2/sim/verilog\xsim.jou
+# Running On: DESKTOP-FFIISC0, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 4, Host memory: 17014 MB
+#-----------------------------------------------------------
+start_gui
+source xsim.dir/CNN/xsim_script.tcl
+# set_param project.enableReportConfiguration 0
+# load_feature core
+# current_fileset
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at F:/Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Vivado/Vivado/2023.2/data/ip'.
+current_fileset: Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 1404.266 ; gain = 285.750
+# xsim {CNN} -view {{CNN_dataflow_ana.wcfg}} -tclbatch {CNN.tcl} -protoinst {CNN.protoinst}
+INFO: [Wavedata 42-565] Reading protoinst file CNN.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_CNN_top/AESL_inst_CNN//AESL_inst_CNN_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_CNN_top/AESL_inst_CNN/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_CNN_top/AESL_inst_CNN/grp_CNN_Pipeline_VITIS_LOOP_145_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5_fu_814/grp_CNN_Pipeline_VITIS_LOOP_145_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5_fu_814_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_CNN_top/AESL_inst_CNN/grp_CNN_Pipeline_VITIS_LOOP_15_1_loop_for_ap_0_fu_732/grp_CNN_Pipeline_VITIS_LOOP_15_1_loop_for_ap_0_fu_732_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_CNN_top/AESL_inst_CNN/grp_CNN_Pipeline_VITIS_LOOP_171_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6_fu_834/grp_CNN_Pipeline_VITIS_LOOP_171_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6_fu_834_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_CNN_top/AESL_inst_CNN/grp_CNN_Pipeline_VITIS_LOOP_197_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7_fu_848/grp_CNN_Pipeline_VITIS_LOOP_197_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7_fu_848_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_CNN_top/AESL_inst_CNN/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_CNN_top/AESL_inst_CNN/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_CNN_top/AESL_inst_CNN/grp_CNN_Pipeline_VITIS_LOOP_93_1_fu_871/grp_CNN_Pipeline_VITIS_LOOP_93_1_fu_871_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_CNN_top/AESL_inst_CNN/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_CNN_top/AESL_inst_CNN/grp_CNN_Pipeline_loop_detect_fu_956/grp_CNN_Pipeline_loop_detect_fu_956_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_CNN_top/AESL_inst_CNN/grp_CNN_Pipeline_loop_for_3_channel_pad_1_loop_for_channel_pad_1_fu_740/grp_CNN_Pipeline_loop_for_3_channel_pad_1_loop_for_channel_pad_1_fu_740_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_CNN_top/AESL_inst_CNN/grp_CNN_Pipeline_loop_for_3_channel_pad_2_loop_for_channel_pad_2_fu_760/grp_CNN_Pipeline_loop_for_3_channel_pad_2_loop_for_channel_pad_2_fu_760_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_CNN_top/AESL_inst_CNN/grp_CNN_Pipeline_loop_for_3_channel_pad_3_loop_for_channel_pad_3_fu_774/grp_CNN_Pipeline_loop_for_3_channel_pad_3_loop_for_channel_pad_3_fu_774_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_CNN_top/AESL_inst_CNN/grp_CNN_Pipeline_loop_for_3_channel_pad_4_loop_for_channel_pad_4_fu_794/grp_CNN_Pipeline_loop_for_3_channel_pad_4_loop_for_channel_pad_4_fu_794_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_CNN_top/AESL_inst_CNN/grp_CNN_Pipeline_loop_for_3_channel_pad_5_loop_for_channel_pad_5_fu_808/grp_CNN_Pipeline_loop_for_3_channel_pad_5_loop_for_channel_pad_5_fu_808_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_CNN_top/AESL_inst_CNN/grp_CNN_Pipeline_loop_for_3_channel_pad_6_loop_for_channel_pad_6_fu_828/grp_CNN_Pipeline_loop_for_3_channel_pad_6_loop_for_channel_pad_6_fu_828_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_CNN_top/AESL_inst_CNN/grp_CNN_Pipeline_loop_for_3_channel_pad_7_loop_for_channel_pad_7_fu_842/grp_CNN_Pipeline_loop_for_3_channel_pad_7_loop_for_channel_pad_7_fu_842_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_CNN_top/AESL_inst_CNN/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_CNN_top/AESL_inst_CNN/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_CNN_top/AESL_inst_CNN/grp_CNN_Pipeline_loop_for_channel_pad_0_fu_724/grp_CNN_Pipeline_loop_for_channel_pad_0_fu_724_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_CNN_top/AESL_inst_CNN/grp_CNN_Pipeline_loop_for_channel_pool_0_loop_for_weight_pool_0_fu_754/grp_CNN_Pipeline_loop_for_channel_pool_0_loop_for_weight_pool_0_fu_754_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_CNN_top/AESL_inst_CNN/grp_CNN_Pipeline_loop_for_channel_pool_1_loop_for_weight_pool_1_fu_788/grp_CNN_Pipeline_loop_for_channel_pool_1_loop_for_weight_pool_1_fu_788_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_CNN_top/AESL_inst_CNN/grp_CNN_Pipeline_loop_for_channel_pool_2_loop_for_weight_pool_2_fu_822/grp_CNN_Pipeline_loop_for_channel_pool_2_loop_for_weight_pool_2_fu_822_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_CNN_top/AESL_inst_CNN/grp_CNN_Pipeline_loop_for_channel_pool_3_loop_for_weight_pool_3_fu_856/grp_CNN_Pipeline_loop_for_channel_pool_3_loop_for_weight_pool_3_fu_856_activity
+Time resolution is 1 ps
+open_wave_config CNN_dataflow_ana.wcfg
+open_wave_config: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1504.832 ; gain = 67.934
+source CNN.tcl
+## log_wave [get_objects -filter {type == in_port || type == out_port || type == inout_port || type == port} /apatb_CNN_top/AESL_inst_CNN/*]
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set return_group [add_wave_group return(wire) -into $coutputgroup]
+## add_wave /apatb_CNN_top/AESL_inst_CNN/OutModel_ap_vld -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_CNN_top/AESL_inst_CNN/OutModel -into $return_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set return_group [add_wave_group return(memory) -into $cinputgroup]
+## add_wave /apatb_CNN_top/AESL_inst_CNN/Weights_q1 -into $return_group -radix hex
+## add_wave /apatb_CNN_top/AESL_inst_CNN/Weights_ce1 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_CNN_top/AESL_inst_CNN/Weights_address1 -into $return_group -radix hex
+## add_wave /apatb_CNN_top/AESL_inst_CNN/Weights_q0 -into $return_group -radix hex
+## add_wave /apatb_CNN_top/AESL_inst_CNN/Weights_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_CNN_top/AESL_inst_CNN/Weights_address0 -into $return_group -radix hex
+## add_wave /apatb_CNN_top/AESL_inst_CNN/InModel_q0 -into $return_group -radix hex
+## add_wave /apatb_CNN_top/AESL_inst_CNN/InModel_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_CNN_top/AESL_inst_CNN/InModel_address0 -into $return_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_CNN_top/AESL_inst_CNN/ap_start -into $blocksiggroup
+## add_wave /apatb_CNN_top/AESL_inst_CNN/ap_done -into $blocksiggroup
+## add_wave /apatb_CNN_top/AESL_inst_CNN/ap_idle -into $blocksiggroup
+## add_wave /apatb_CNN_top/AESL_inst_CNN/ap_ready -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_CNN_top/AESL_inst_CNN/ap_rst -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_CNN_top/AESL_inst_CNN/ap_clk -into $clockgroup
+## save_wave_config CNN.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "113000"
+// RTL Simulation : 1 / 1 [100.00%] @ "2531573000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 2531602500 ps : File "F:/Ky2nam3/do_an_1/code/doan1/project2/solution2/sim/verilog/CNN.autotb.v" Line 334
+run: Time (s): cpu = 00:04:25 ; elapsed = 00:04:28 . Memory (MB): peak = 1567.070 ; gain = 42.438
+xsim: Time (s): cpu = 00:04:41 ; elapsed = 00:04:38 . Memory (MB): peak = 1567.070 ; gain = 162.805
+save_wave_config {F:/Ky2nam3/do_an_1/code/doan1/project2/solution2/sim/verilog/CNN.wcfg}
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 39140 KB (Peak: 39140 KB), Simulation CPU Usage: 45311 ms
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Jun  7 20:27:29 2024...

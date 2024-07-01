@@ -1,0 +1,638 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date              : Thu Jun 27 11:00:44 2024
+| Host              : DESKTOP-FFIISC0 running 64-bit major release  (build 9200)
+| Command           : report_timing -max_paths 10 -file ./report/CNN_timing_paths_synth.rpt
+| Design            : bd_0_wrapper
+| Device            : xck26-sfvc784
+| Speed File        : -2LV  PRODUCTION 1.30 05-15-2022
+| Design State      : Synthesized
+| Temperature Grade : C
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             1.343ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST/ALU_OUT[16]
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (ap_clk rise@5.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.585ns  (logic 3.145ns (87.727%)  route 0.440ns (12.273%))
+  Logic Levels:           5  (DSP_A_B_DATA=1 DSP_ALU=1 DSP_M_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.051ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.055ns = ( 5.055 - 5.000 ) 
+    Source Clock Delay      (SCD):    0.106ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=4823, unset)         0.106     0.106    bd_0_i/hls_inst/inst/OutPadConv1_U/ap_clk
+                         RAMB36E2                                     r  bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[15])
+                                                      1.279     1.385 f  bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0/DOUTBDOUT[15]
+                         net (fo=49, unplaced)        0.440     1.825    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/A[15]
+                         DSP_A_B_DATA (Prop_DSP_A_B_DATA_A[15]_A2_DATA[15])
+                                                      0.258     2.083 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_A_B_DATA_INST/A2_DATA[15]
+                         net (fo=1, unplaced)         0.000     2.083    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_A_B_DATA.A2_DATA<15>
+                         DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_A2_DATA[15]_A2A1[15])
+                                                      0.114     2.197 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_PREADD_DATA_INST/A2A1[15]
+                         net (fo=1, unplaced)         0.000     2.197    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_PREADD_DATA.A2A1<15>
+                         DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_A2A1[15]_U[16])
+                                                      0.700     2.897 f  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_MULTIPLIER_INST/U[16]
+                         net (fo=1, unplaced)         0.000     2.897    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_MULTIPLIER.U<16>
+                         DSP_M_DATA (Prop_DSP_M_DATA_U[16]_U_DATA[16])
+                                                      0.067     2.964 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_M_DATA_INST/U_DATA[16]
+                         net (fo=1, unplaced)         0.000     2.964    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_M_DATA.U_DATA<16>
+                         DSP_ALU (Prop_DSP_ALU_U_DATA[16]_ALU_OUT[16])
+                                                      0.727     3.691 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_ALU_INST/ALU_OUT[16]
+                         net (fo=1, unplaced)         0.000     3.691    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_ALU.ALU_OUT<16>
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST/ALU_OUT[16]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     5.000     5.000 r  
+                                                      0.000     5.000 r  ap_clk (IN)
+                         net (fo=4823, unset)         0.055     5.055    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/CLK
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST/CLK
+                         clock pessimism              0.000     5.055    
+                         clock uncertainty           -0.035     5.020    
+                         DSP_OUTPUT (Setup_DSP_OUTPUT_CLK_ALU_OUT[16])
+                                                      0.014     5.034    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST
+  -------------------------------------------------------------------
+                         required time                          5.034    
+                         arrival time                          -3.691    
+  -------------------------------------------------------------------
+                         slack                                  1.343    
+
+Slack (MET) :             1.343ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST/ALU_OUT[17]
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (ap_clk rise@5.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.585ns  (logic 3.145ns (87.727%)  route 0.440ns (12.273%))
+  Logic Levels:           5  (DSP_A_B_DATA=1 DSP_ALU=1 DSP_M_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.051ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.055ns = ( 5.055 - 5.000 ) 
+    Source Clock Delay      (SCD):    0.106ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=4823, unset)         0.106     0.106    bd_0_i/hls_inst/inst/OutPadConv1_U/ap_clk
+                         RAMB36E2                                     r  bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[15])
+                                                      1.279     1.385 f  bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0/DOUTBDOUT[15]
+                         net (fo=49, unplaced)        0.440     1.825    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/A[15]
+                         DSP_A_B_DATA (Prop_DSP_A_B_DATA_A[15]_A2_DATA[15])
+                                                      0.258     2.083 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_A_B_DATA_INST/A2_DATA[15]
+                         net (fo=1, unplaced)         0.000     2.083    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_A_B_DATA.A2_DATA<15>
+                         DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_A2_DATA[15]_A2A1[15])
+                                                      0.114     2.197 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_PREADD_DATA_INST/A2A1[15]
+                         net (fo=1, unplaced)         0.000     2.197    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_PREADD_DATA.A2A1<15>
+                         DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_A2A1[15]_U[17])
+                                                      0.700     2.897 f  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_MULTIPLIER_INST/U[17]
+                         net (fo=1, unplaced)         0.000     2.897    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_MULTIPLIER.U<17>
+                         DSP_M_DATA (Prop_DSP_M_DATA_U[17]_U_DATA[17])
+                                                      0.067     2.964 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_M_DATA_INST/U_DATA[17]
+                         net (fo=1, unplaced)         0.000     2.964    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_M_DATA.U_DATA<17>
+                         DSP_ALU (Prop_DSP_ALU_U_DATA[17]_ALU_OUT[17])
+                                                      0.727     3.691 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_ALU_INST/ALU_OUT[17]
+                         net (fo=1, unplaced)         0.000     3.691    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_ALU.ALU_OUT<17>
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST/ALU_OUT[17]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     5.000     5.000 r  
+                                                      0.000     5.000 r  ap_clk (IN)
+                         net (fo=4823, unset)         0.055     5.055    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/CLK
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST/CLK
+                         clock pessimism              0.000     5.055    
+                         clock uncertainty           -0.035     5.020    
+                         DSP_OUTPUT (Setup_DSP_OUTPUT_CLK_ALU_OUT[17])
+                                                      0.014     5.034    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST
+  -------------------------------------------------------------------
+                         required time                          5.034    
+                         arrival time                          -3.691    
+  -------------------------------------------------------------------
+                         slack                                  1.343    
+
+Slack (MET) :             1.343ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST/ALU_OUT[18]
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (ap_clk rise@5.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.585ns  (logic 3.145ns (87.727%)  route 0.440ns (12.273%))
+  Logic Levels:           5  (DSP_A_B_DATA=1 DSP_ALU=1 DSP_M_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.051ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.055ns = ( 5.055 - 5.000 ) 
+    Source Clock Delay      (SCD):    0.106ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=4823, unset)         0.106     0.106    bd_0_i/hls_inst/inst/OutPadConv1_U/ap_clk
+                         RAMB36E2                                     r  bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[15])
+                                                      1.279     1.385 f  bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0/DOUTBDOUT[15]
+                         net (fo=49, unplaced)        0.440     1.825    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/A[15]
+                         DSP_A_B_DATA (Prop_DSP_A_B_DATA_A[15]_A2_DATA[15])
+                                                      0.258     2.083 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_A_B_DATA_INST/A2_DATA[15]
+                         net (fo=1, unplaced)         0.000     2.083    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_A_B_DATA.A2_DATA<15>
+                         DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_A2_DATA[15]_A2A1[15])
+                                                      0.114     2.197 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_PREADD_DATA_INST/A2A1[15]
+                         net (fo=1, unplaced)         0.000     2.197    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_PREADD_DATA.A2A1<15>
+                         DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_A2A1[15]_U[18])
+                                                      0.700     2.897 f  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_MULTIPLIER_INST/U[18]
+                         net (fo=1, unplaced)         0.000     2.897    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_MULTIPLIER.U<18>
+                         DSP_M_DATA (Prop_DSP_M_DATA_U[18]_U_DATA[18])
+                                                      0.067     2.964 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_M_DATA_INST/U_DATA[18]
+                         net (fo=1, unplaced)         0.000     2.964    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_M_DATA.U_DATA<18>
+                         DSP_ALU (Prop_DSP_ALU_U_DATA[18]_ALU_OUT[18])
+                                                      0.727     3.691 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_ALU_INST/ALU_OUT[18]
+                         net (fo=1, unplaced)         0.000     3.691    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_ALU.ALU_OUT<18>
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST/ALU_OUT[18]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     5.000     5.000 r  
+                                                      0.000     5.000 r  ap_clk (IN)
+                         net (fo=4823, unset)         0.055     5.055    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/CLK
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST/CLK
+                         clock pessimism              0.000     5.055    
+                         clock uncertainty           -0.035     5.020    
+                         DSP_OUTPUT (Setup_DSP_OUTPUT_CLK_ALU_OUT[18])
+                                                      0.014     5.034    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST
+  -------------------------------------------------------------------
+                         required time                          5.034    
+                         arrival time                          -3.691    
+  -------------------------------------------------------------------
+                         slack                                  1.343    
+
+Slack (MET) :             1.343ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST/ALU_OUT[19]
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (ap_clk rise@5.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.585ns  (logic 3.145ns (87.727%)  route 0.440ns (12.273%))
+  Logic Levels:           5  (DSP_A_B_DATA=1 DSP_ALU=1 DSP_M_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.051ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.055ns = ( 5.055 - 5.000 ) 
+    Source Clock Delay      (SCD):    0.106ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=4823, unset)         0.106     0.106    bd_0_i/hls_inst/inst/OutPadConv1_U/ap_clk
+                         RAMB36E2                                     r  bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[15])
+                                                      1.279     1.385 f  bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0/DOUTBDOUT[15]
+                         net (fo=49, unplaced)        0.440     1.825    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/A[15]
+                         DSP_A_B_DATA (Prop_DSP_A_B_DATA_A[15]_A2_DATA[15])
+                                                      0.258     2.083 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_A_B_DATA_INST/A2_DATA[15]
+                         net (fo=1, unplaced)         0.000     2.083    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_A_B_DATA.A2_DATA<15>
+                         DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_A2_DATA[15]_A2A1[15])
+                                                      0.114     2.197 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_PREADD_DATA_INST/A2A1[15]
+                         net (fo=1, unplaced)         0.000     2.197    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_PREADD_DATA.A2A1<15>
+                         DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_A2A1[15]_U[19])
+                                                      0.700     2.897 f  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_MULTIPLIER_INST/U[19]
+                         net (fo=1, unplaced)         0.000     2.897    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_MULTIPLIER.U<19>
+                         DSP_M_DATA (Prop_DSP_M_DATA_U[19]_U_DATA[19])
+                                                      0.067     2.964 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_M_DATA_INST/U_DATA[19]
+                         net (fo=1, unplaced)         0.000     2.964    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_M_DATA.U_DATA<19>
+                         DSP_ALU (Prop_DSP_ALU_U_DATA[19]_ALU_OUT[19])
+                                                      0.727     3.691 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_ALU_INST/ALU_OUT[19]
+                         net (fo=1, unplaced)         0.000     3.691    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_ALU.ALU_OUT<19>
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST/ALU_OUT[19]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     5.000     5.000 r  
+                                                      0.000     5.000 r  ap_clk (IN)
+                         net (fo=4823, unset)         0.055     5.055    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/CLK
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST/CLK
+                         clock pessimism              0.000     5.055    
+                         clock uncertainty           -0.035     5.020    
+                         DSP_OUTPUT (Setup_DSP_OUTPUT_CLK_ALU_OUT[19])
+                                                      0.014     5.034    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST
+  -------------------------------------------------------------------
+                         required time                          5.034    
+                         arrival time                          -3.691    
+  -------------------------------------------------------------------
+                         slack                                  1.343    
+
+Slack (MET) :             1.343ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST/ALU_OUT[20]
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (ap_clk rise@5.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.585ns  (logic 3.145ns (87.727%)  route 0.440ns (12.273%))
+  Logic Levels:           5  (DSP_A_B_DATA=1 DSP_ALU=1 DSP_M_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.051ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.055ns = ( 5.055 - 5.000 ) 
+    Source Clock Delay      (SCD):    0.106ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=4823, unset)         0.106     0.106    bd_0_i/hls_inst/inst/OutPadConv1_U/ap_clk
+                         RAMB36E2                                     r  bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[15])
+                                                      1.279     1.385 f  bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0/DOUTBDOUT[15]
+                         net (fo=49, unplaced)        0.440     1.825    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/A[15]
+                         DSP_A_B_DATA (Prop_DSP_A_B_DATA_A[15]_A2_DATA[15])
+                                                      0.258     2.083 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_A_B_DATA_INST/A2_DATA[15]
+                         net (fo=1, unplaced)         0.000     2.083    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_A_B_DATA.A2_DATA<15>
+                         DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_A2_DATA[15]_A2A1[15])
+                                                      0.114     2.197 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_PREADD_DATA_INST/A2A1[15]
+                         net (fo=1, unplaced)         0.000     2.197    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_PREADD_DATA.A2A1<15>
+                         DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_A2A1[15]_U[20])
+                                                      0.700     2.897 f  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_MULTIPLIER_INST/U[20]
+                         net (fo=1, unplaced)         0.000     2.897    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_MULTIPLIER.U<20>
+                         DSP_M_DATA (Prop_DSP_M_DATA_U[20]_U_DATA[20])
+                                                      0.067     2.964 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_M_DATA_INST/U_DATA[20]
+                         net (fo=1, unplaced)         0.000     2.964    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_M_DATA.U_DATA<20>
+                         DSP_ALU (Prop_DSP_ALU_U_DATA[20]_ALU_OUT[20])
+                                                      0.727     3.691 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_ALU_INST/ALU_OUT[20]
+                         net (fo=1, unplaced)         0.000     3.691    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_ALU.ALU_OUT<20>
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST/ALU_OUT[20]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     5.000     5.000 r  
+                                                      0.000     5.000 r  ap_clk (IN)
+                         net (fo=4823, unset)         0.055     5.055    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/CLK
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST/CLK
+                         clock pessimism              0.000     5.055    
+                         clock uncertainty           -0.035     5.020    
+                         DSP_OUTPUT (Setup_DSP_OUTPUT_CLK_ALU_OUT[20])
+                                                      0.014     5.034    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST
+  -------------------------------------------------------------------
+                         required time                          5.034    
+                         arrival time                          -3.691    
+  -------------------------------------------------------------------
+                         slack                                  1.343    
+
+Slack (MET) :             1.343ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST/ALU_OUT[21]
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (ap_clk rise@5.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.585ns  (logic 3.145ns (87.727%)  route 0.440ns (12.273%))
+  Logic Levels:           5  (DSP_A_B_DATA=1 DSP_ALU=1 DSP_M_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.051ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.055ns = ( 5.055 - 5.000 ) 
+    Source Clock Delay      (SCD):    0.106ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=4823, unset)         0.106     0.106    bd_0_i/hls_inst/inst/OutPadConv1_U/ap_clk
+                         RAMB36E2                                     r  bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[15])
+                                                      1.279     1.385 f  bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0/DOUTBDOUT[15]
+                         net (fo=49, unplaced)        0.440     1.825    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/A[15]
+                         DSP_A_B_DATA (Prop_DSP_A_B_DATA_A[15]_A2_DATA[15])
+                                                      0.258     2.083 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_A_B_DATA_INST/A2_DATA[15]
+                         net (fo=1, unplaced)         0.000     2.083    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_A_B_DATA.A2_DATA<15>
+                         DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_A2_DATA[15]_A2A1[15])
+                                                      0.114     2.197 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_PREADD_DATA_INST/A2A1[15]
+                         net (fo=1, unplaced)         0.000     2.197    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_PREADD_DATA.A2A1<15>
+                         DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_A2A1[15]_U[21])
+                                                      0.700     2.897 f  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_MULTIPLIER_INST/U[21]
+                         net (fo=1, unplaced)         0.000     2.897    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_MULTIPLIER.U<21>
+                         DSP_M_DATA (Prop_DSP_M_DATA_U[21]_U_DATA[21])
+                                                      0.067     2.964 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_M_DATA_INST/U_DATA[21]
+                         net (fo=1, unplaced)         0.000     2.964    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_M_DATA.U_DATA<21>
+                         DSP_ALU (Prop_DSP_ALU_U_DATA[21]_ALU_OUT[21])
+                                                      0.727     3.691 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_ALU_INST/ALU_OUT[21]
+                         net (fo=1, unplaced)         0.000     3.691    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_ALU.ALU_OUT<21>
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST/ALU_OUT[21]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     5.000     5.000 r  
+                                                      0.000     5.000 r  ap_clk (IN)
+                         net (fo=4823, unset)         0.055     5.055    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/CLK
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST/CLK
+                         clock pessimism              0.000     5.055    
+                         clock uncertainty           -0.035     5.020    
+                         DSP_OUTPUT (Setup_DSP_OUTPUT_CLK_ALU_OUT[21])
+                                                      0.014     5.034    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST
+  -------------------------------------------------------------------
+                         required time                          5.034    
+                         arrival time                          -3.691    
+  -------------------------------------------------------------------
+                         slack                                  1.343    
+
+Slack (MET) :             1.343ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST/ALU_OUT[22]
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (ap_clk rise@5.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.585ns  (logic 3.145ns (87.727%)  route 0.440ns (12.273%))
+  Logic Levels:           5  (DSP_A_B_DATA=1 DSP_ALU=1 DSP_M_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.051ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.055ns = ( 5.055 - 5.000 ) 
+    Source Clock Delay      (SCD):    0.106ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=4823, unset)         0.106     0.106    bd_0_i/hls_inst/inst/OutPadConv1_U/ap_clk
+                         RAMB36E2                                     r  bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[15])
+                                                      1.279     1.385 f  bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0/DOUTBDOUT[15]
+                         net (fo=49, unplaced)        0.440     1.825    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/A[15]
+                         DSP_A_B_DATA (Prop_DSP_A_B_DATA_A[15]_A2_DATA[15])
+                                                      0.258     2.083 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_A_B_DATA_INST/A2_DATA[15]
+                         net (fo=1, unplaced)         0.000     2.083    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_A_B_DATA.A2_DATA<15>
+                         DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_A2_DATA[15]_A2A1[15])
+                                                      0.114     2.197 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_PREADD_DATA_INST/A2A1[15]
+                         net (fo=1, unplaced)         0.000     2.197    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_PREADD_DATA.A2A1<15>
+                         DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_A2A1[15]_U[22])
+                                                      0.700     2.897 f  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_MULTIPLIER_INST/U[22]
+                         net (fo=1, unplaced)         0.000     2.897    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_MULTIPLIER.U<22>
+                         DSP_M_DATA (Prop_DSP_M_DATA_U[22]_U_DATA[22])
+                                                      0.067     2.964 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_M_DATA_INST/U_DATA[22]
+                         net (fo=1, unplaced)         0.000     2.964    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_M_DATA.U_DATA<22>
+                         DSP_ALU (Prop_DSP_ALU_U_DATA[22]_ALU_OUT[22])
+                                                      0.727     3.691 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_ALU_INST/ALU_OUT[22]
+                         net (fo=1, unplaced)         0.000     3.691    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_ALU.ALU_OUT<22>
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST/ALU_OUT[22]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     5.000     5.000 r  
+                                                      0.000     5.000 r  ap_clk (IN)
+                         net (fo=4823, unset)         0.055     5.055    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/CLK
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST/CLK
+                         clock pessimism              0.000     5.055    
+                         clock uncertainty           -0.035     5.020    
+                         DSP_OUTPUT (Setup_DSP_OUTPUT_CLK_ALU_OUT[22])
+                                                      0.014     5.034    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST
+  -------------------------------------------------------------------
+                         required time                          5.034    
+                         arrival time                          -3.691    
+  -------------------------------------------------------------------
+                         slack                                  1.343    
+
+Slack (MET) :             1.343ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST/ALU_OUT[23]
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (ap_clk rise@5.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.585ns  (logic 3.145ns (87.727%)  route 0.440ns (12.273%))
+  Logic Levels:           5  (DSP_A_B_DATA=1 DSP_ALU=1 DSP_M_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.051ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.055ns = ( 5.055 - 5.000 ) 
+    Source Clock Delay      (SCD):    0.106ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=4823, unset)         0.106     0.106    bd_0_i/hls_inst/inst/OutPadConv1_U/ap_clk
+                         RAMB36E2                                     r  bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[15])
+                                                      1.279     1.385 f  bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0/DOUTBDOUT[15]
+                         net (fo=49, unplaced)        0.440     1.825    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/A[15]
+                         DSP_A_B_DATA (Prop_DSP_A_B_DATA_A[15]_A2_DATA[15])
+                                                      0.258     2.083 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_A_B_DATA_INST/A2_DATA[15]
+                         net (fo=1, unplaced)         0.000     2.083    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_A_B_DATA.A2_DATA<15>
+                         DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_A2_DATA[15]_A2A1[15])
+                                                      0.114     2.197 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_PREADD_DATA_INST/A2A1[15]
+                         net (fo=1, unplaced)         0.000     2.197    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_PREADD_DATA.A2A1<15>
+                         DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_A2A1[15]_U[23])
+                                                      0.700     2.897 f  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_MULTIPLIER_INST/U[23]
+                         net (fo=1, unplaced)         0.000     2.897    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_MULTIPLIER.U<23>
+                         DSP_M_DATA (Prop_DSP_M_DATA_U[23]_U_DATA[23])
+                                                      0.067     2.964 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_M_DATA_INST/U_DATA[23]
+                         net (fo=1, unplaced)         0.000     2.964    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_M_DATA.U_DATA<23>
+                         DSP_ALU (Prop_DSP_ALU_U_DATA[23]_ALU_OUT[23])
+                                                      0.727     3.691 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_ALU_INST/ALU_OUT[23]
+                         net (fo=1, unplaced)         0.000     3.691    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_ALU.ALU_OUT<23>
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST/ALU_OUT[23]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     5.000     5.000 r  
+                                                      0.000     5.000 r  ap_clk (IN)
+                         net (fo=4823, unset)         0.055     5.055    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/CLK
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST/CLK
+                         clock pessimism              0.000     5.055    
+                         clock uncertainty           -0.035     5.020    
+                         DSP_OUTPUT (Setup_DSP_OUTPUT_CLK_ALU_OUT[23])
+                                                      0.014     5.034    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST
+  -------------------------------------------------------------------
+                         required time                          5.034    
+                         arrival time                          -3.691    
+  -------------------------------------------------------------------
+                         slack                                  1.343    
+
+Slack (MET) :             1.343ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST/ALU_OUT[24]
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (ap_clk rise@5.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.585ns  (logic 3.145ns (87.727%)  route 0.440ns (12.273%))
+  Logic Levels:           5  (DSP_A_B_DATA=1 DSP_ALU=1 DSP_M_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.051ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.055ns = ( 5.055 - 5.000 ) 
+    Source Clock Delay      (SCD):    0.106ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=4823, unset)         0.106     0.106    bd_0_i/hls_inst/inst/OutPadConv1_U/ap_clk
+                         RAMB36E2                                     r  bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[15])
+                                                      1.279     1.385 f  bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0/DOUTBDOUT[15]
+                         net (fo=49, unplaced)        0.440     1.825    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/A[15]
+                         DSP_A_B_DATA (Prop_DSP_A_B_DATA_A[15]_A2_DATA[15])
+                                                      0.258     2.083 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_A_B_DATA_INST/A2_DATA[15]
+                         net (fo=1, unplaced)         0.000     2.083    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_A_B_DATA.A2_DATA<15>
+                         DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_A2_DATA[15]_A2A1[15])
+                                                      0.114     2.197 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_PREADD_DATA_INST/A2A1[15]
+                         net (fo=1, unplaced)         0.000     2.197    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_PREADD_DATA.A2A1<15>
+                         DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_A2A1[15]_U[24])
+                                                      0.700     2.897 f  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_MULTIPLIER_INST/U[24]
+                         net (fo=1, unplaced)         0.000     2.897    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_MULTIPLIER.U<24>
+                         DSP_M_DATA (Prop_DSP_M_DATA_U[24]_U_DATA[24])
+                                                      0.067     2.964 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_M_DATA_INST/U_DATA[24]
+                         net (fo=1, unplaced)         0.000     2.964    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_M_DATA.U_DATA<24>
+                         DSP_ALU (Prop_DSP_ALU_U_DATA[24]_ALU_OUT[24])
+                                                      0.727     3.691 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_ALU_INST/ALU_OUT[24]
+                         net (fo=1, unplaced)         0.000     3.691    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_ALU.ALU_OUT<24>
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST/ALU_OUT[24]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     5.000     5.000 r  
+                                                      0.000     5.000 r  ap_clk (IN)
+                         net (fo=4823, unset)         0.055     5.055    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/CLK
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST/CLK
+                         clock pessimism              0.000     5.055    
+                         clock uncertainty           -0.035     5.020    
+                         DSP_OUTPUT (Setup_DSP_OUTPUT_CLK_ALU_OUT[24])
+                                                      0.014     5.034    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST
+  -------------------------------------------------------------------
+                         required time                          5.034    
+                         arrival time                          -3.691    
+  -------------------------------------------------------------------
+                         slack                                  1.343    
+
+Slack (MET) :             1.343ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST/ALU_OUT[25]
+                            (rising edge-triggered cell DSP_OUTPUT clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (ap_clk rise@5.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.585ns  (logic 3.145ns (87.727%)  route 0.440ns (12.273%))
+  Logic Levels:           5  (DSP_A_B_DATA=1 DSP_ALU=1 DSP_M_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)
+  Clock Path Skew:        -0.051ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.055ns = ( 5.055 - 5.000 ) 
+    Source Clock Delay      (SCD):    0.106ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=4823, unset)         0.106     0.106    bd_0_i/hls_inst/inst/OutPadConv1_U/ap_clk
+                         RAMB36E2                                     r  bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E2 (Prop_RAMB36E2_CLKBWRCLK_DOUTBDOUT[15])
+                                                      1.279     1.385 f  bd_0_i/hls_inst/inst/OutPadConv1_U/ram0_reg_bram_0/DOUTBDOUT[15]
+                         net (fo=49, unplaced)        0.440     1.825    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/A[15]
+                         DSP_A_B_DATA (Prop_DSP_A_B_DATA_A[15]_A2_DATA[15])
+                                                      0.258     2.083 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_A_B_DATA_INST/A2_DATA[15]
+                         net (fo=1, unplaced)         0.000     2.083    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_A_B_DATA.A2_DATA<15>
+                         DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_A2_DATA[15]_A2A1[15])
+                                                      0.114     2.197 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_PREADD_DATA_INST/A2A1[15]
+                         net (fo=1, unplaced)         0.000     2.197    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_PREADD_DATA.A2A1<15>
+                         DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_A2A1[15]_U[25])
+                                                      0.700     2.897 f  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_MULTIPLIER_INST/U[25]
+                         net (fo=1, unplaced)         0.000     2.897    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_MULTIPLIER.U<25>
+                         DSP_M_DATA (Prop_DSP_M_DATA_U[25]_U_DATA[25])
+                                                      0.067     2.964 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_M_DATA_INST/U_DATA[25]
+                         net (fo=1, unplaced)         0.000     2.964    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_M_DATA.U_DATA<25>
+                         DSP_ALU (Prop_DSP_ALU_U_DATA[25]_ALU_OUT[25])
+                                                      0.727     3.691 r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_ALU_INST/ALU_OUT[25]
+                         net (fo=1, unplaced)         0.000     3.691    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_ALU.ALU_OUT<25>
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST/ALU_OUT[25]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     5.000     5.000 r  
+                                                      0.000     5.000 r  ap_clk (IN)
+                         net (fo=4823, unset)         0.055     5.055    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/CLK
+                         DSP_OUTPUT                                   r  bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST/CLK
+                         clock pessimism              0.000     5.055    
+                         clock uncertainty           -0.035     5.020    
+                         DSP_OUTPUT (Setup_DSP_OUTPUT_CLK_ALU_OUT[25])
+                                                      0.014     5.034    bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/DSP_OUTPUT_INST
+  -------------------------------------------------------------------
+                         required time                          5.034    
+                         arrival time                          -3.691    
+  -------------------------------------------------------------------
+                         slack                                  1.343    
+
+
+
+

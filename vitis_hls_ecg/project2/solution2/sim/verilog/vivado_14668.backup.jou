@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Wed Jun 12 07:45:34 2024
+# Process ID: 14668
+# Current directory: F:/Ky2nam3/do_an_1/code/doan1/project2/solution2/sim/verilog
+# Command line: vivado.exe -source open_wave.tcl
+# Log file: F:/Ky2nam3/do_an_1/code/doan1/project2/solution2/sim/verilog/vivado.log
+# Journal file: F:/Ky2nam3/do_an_1/code/doan1/project2/solution2/sim/verilog\vivado.jou
+# Running On: DESKTOP-FFIISC0, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 4, Host memory: 17014 MB
+#-----------------------------------------------------------
+start_gui
+source open_wave.tcl

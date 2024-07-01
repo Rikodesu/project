@@ -1,0 +1,174 @@
+
+
+================================================================
+== Vitis HLS Report for 'CNN_Pipeline_loop_for_3_channel_pad_6_loop_for_channel_pad_6'
+================================================================
+* Date:           Fri Jun  7 16:44:15 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        project2
+* Solution:       solution2 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  2.978 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      708|      708|  3.540 us|  3.540 us|  708|  708|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |                     Loop Name                     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- loop_for_3_channel_pad_6_loop_for_channel_pad_6  |      706|      706|         4|          1|          1|   704|       yes|
+        +---------------------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     1|       -|       -|    -|
+|Expression       |        -|     -|       0|     178|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        -|     -|       -|       -|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       -|      72|    -|
+|Register         |        -|     -|     171|      64|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|     1|     171|     314|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      288|  1248|  234240|  117120|   64|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|    ~0|      ~0|      ~0|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    +------------------------------------+-------------------------------+--------------+
+    |              Instance              |             Module            |  Expression  |
+    +------------------------------------+-------------------------------+--------------+
+    |mac_muladd_5ns_6ns_6ns_10_4_1_U176  |mac_muladd_5ns_6ns_6ns_10_4_1  |  i0 + i1 * i2|
+    +------------------------------------+-------------------------------+--------------+
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name      | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------+----------+----+---+----+------------+------------+
+    |add_ln161_1_fu_146_p2     |         +|   0|  0|  12|           5|           1|
+    |add_ln161_fu_120_p2       |         +|   0|  0|  17|          10|           1|
+    |add_ln163_fu_184_p2       |         +|   0|  0|  13|           6|           1|
+    |add_ln164_1_fu_233_p2     |         +|   0|  0|  18|          10|          10|
+    |add_ln164_2_fu_249_p2     |         +|   0|  0|  18|          10|          10|
+    |add_ln164_3_fu_239_p2     |         +|   0|  0|  14|           7|           3|
+    |icmp_ln161_fu_114_p2      |      icmp|   0|  0|  17|          10|          10|
+    |icmp_ln163_fu_132_p2      |      icmp|   0|  0|  13|           6|           6|
+    |icmp_ln164_1_fu_260_p2    |      icmp|   0|  0|  13|           6|           6|
+    |icmp_ln164_fu_178_p2      |      icmp|   0|  0|  12|           5|           1|
+    |or_ln164_fu_265_p2        |        or|   0|  0|   2|           1|           1|
+    |OutPadConv6_d0            |    select|   0|  0|  16|           1|           1|
+    |select_ln161_1_fu_152_p3  |    select|   0|  0|   5|           1|           5|
+    |select_ln161_fu_138_p3    |    select|   0|  0|   6|           1|           1|
+    |ap_enable_pp0             |       xor|   0|  0|   2|           1|           2|
+    +--------------------------+----------+----+---+----+------------+------------+
+    |Total                     |          |   0|  0| 178|          80|          59|
+    +--------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------------------+----+-----------+-----+-----------+
+    |                   Name                  | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------------------+----+-----------+-----+-----------+
+    |ap_done_int                              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1                  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_c_load                  |   9|          2|    5|         10|
+    |ap_sig_allocacmp_indvar_flatten136_load  |   9|          2|   10|         20|
+    |ap_sig_allocacmp_n_load                  |   9|          2|    6|         12|
+    |c_fu_62                                  |   9|          2|    5|         10|
+    |indvar_flatten136_fu_66                  |   9|          2|   10|         20|
+    |n_fu_58                                  |   9|          2|    6|         12|
+    +-----------------------------------------+----+-----------+-----+-----------+
+    |Total                                    |  72|         16|   44|         88|
+    +-----------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------+----+----+-----+-----------+
+    |               Name               | FF | LUT| Bits| Const Bits|
+    +----------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                         |   1|   0|    1|          0|
+    |ap_done_reg                       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3           |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter2_reg  |   1|   0|    1|          0|
+    |c_fu_62                           |   5|   0|    5|          0|
+    |empty_reg_329                     |   4|   0|    4|          0|
+    |empty_reg_329_pp0_iter1_reg       |   4|   0|    4|          0|
+    |icmp_ln164_reg_335                |   1|   0|    1|          0|
+    |indvar_flatten136_fu_66           |  10|   0|   10|          0|
+    |n_fu_58                           |   6|   0|    6|          0|
+    |select_ln161_reg_317              |   6|   0|    6|          0|
+    |icmp_ln164_reg_335                |  64|  32|    1|          0|
+    |select_ln161_reg_317              |  64|  32|    6|          0|
+    +----------------------------------+----+----+-----+-----------+
+    |Total                             | 171|  64|   50|          0|
+    +----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------+-----+-----+------------+--------------------------------------------------------------+--------------+
+|       RTL Ports      | Dir | Bits|  Protocol  |                         Source Object                        |    C Type    |
++----------------------+-----+-----+------------+--------------------------------------------------------------+--------------+
+|ap_clk                |   in|    1|  ap_ctrl_hs|  CNN_Pipeline_loop_for_3_channel_pad_6_loop_for_channel_pad_6|  return value|
+|ap_rst                |   in|    1|  ap_ctrl_hs|  CNN_Pipeline_loop_for_3_channel_pad_6_loop_for_channel_pad_6|  return value|
+|ap_start              |   in|    1|  ap_ctrl_hs|  CNN_Pipeline_loop_for_3_channel_pad_6_loop_for_channel_pad_6|  return value|
+|ap_done               |  out|    1|  ap_ctrl_hs|  CNN_Pipeline_loop_for_3_channel_pad_6_loop_for_channel_pad_6|  return value|
+|ap_idle               |  out|    1|  ap_ctrl_hs|  CNN_Pipeline_loop_for_3_channel_pad_6_loop_for_channel_pad_6|  return value|
+|ap_ready              |  out|    1|  ap_ctrl_hs|  CNN_Pipeline_loop_for_3_channel_pad_6_loop_for_channel_pad_6|  return value|
+|OutPadConv6_address0  |  out|   10|   ap_memory|                                                   OutPadConv6|         array|
+|OutPadConv6_ce0       |  out|    1|   ap_memory|                                                   OutPadConv6|         array|
+|OutPadConv6_we0       |  out|    1|   ap_memory|                                                   OutPadConv6|         array|
+|OutPadConv6_d0        |  out|   16|   ap_memory|                                                   OutPadConv6|         array|
+|OutPool2_address0     |  out|   10|   ap_memory|                                                      OutPool2|         array|
+|OutPool2_ce0          |  out|    1|   ap_memory|                                                      OutPool2|         array|
+|OutPool2_q0           |   in|   16|   ap_memory|                                                      OutPool2|         array|
++----------------------+-----+-----+------------+--------------------------------------------------------------+--------------+
+

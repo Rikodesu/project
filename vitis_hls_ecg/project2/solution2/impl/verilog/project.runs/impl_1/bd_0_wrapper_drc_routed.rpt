@@ -1,0 +1,1028 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Thu Jun 27 11:10:38 2024
+| Host         : DESKTOP-FFIISC0 running 64-bit major release  (build 9200)
+| Command      : report_drc -file bd_0_wrapper_drc_routed.rpt -pb bd_0_wrapper_drc_routed.pb -rpx bd_0_wrapper_drc_routed.rpx
+| Design       : bd_0_wrapper
+| Device       : xck26-sfvc784-2LV-c
+| Speed File   : -2LV
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_bd_0_wrapper
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 195
++-----------+----------+------------------------+------------+
+| Rule      | Severity | Description            | Violations |
++-----------+----------+------------------------+------------+
+| DPIP-2    | Warning  | Input pipelining       | 186        |
+| DPOP-4    | Warning  | MREG Output pipelining | 8          |
+| RTSTAT-10 | Warning  | No routable loads      | 1          |
++-----------+----------+------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-2#1 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U123/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U123/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#2 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U124/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U124/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#3 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U125/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U125/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#4 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U126/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U126/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#5 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U127/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U127/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#6 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U128/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U128/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#7 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U129/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U129/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#8 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U130/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U130/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#9 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U131/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U131/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#10 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U132/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U132/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#11 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U133/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U133/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#12 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U134/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U134/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#13 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U135/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U135/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#14 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U136/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U136/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#15 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U137/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U137/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#16 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U138/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U138/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#17 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U139/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U139/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#18 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U140/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U140/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#19 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U141/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U141/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#20 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U142/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U142/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#21 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U143/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U143/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#22 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U144/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U144/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#23 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U145/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U145/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#24 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U146/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U146/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#25 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U147/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U147/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#26 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U148/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U148/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#27 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U149/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U149/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#28 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U150/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U150/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#29 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U151/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U151/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#30 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U152/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U152/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#31 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U153/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U153/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#32 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U154/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U154/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#33 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U155/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U155/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#34 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U156/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U156/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#35 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U157/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U157/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#36 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U158/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U158/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#37 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U159/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U159/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#38 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U160/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U160/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#39 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U161/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/mac_muladd_16s_16s_24ns_24_4_1_U161/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#40 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/tmp_s_reg_3521_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/tmp_s_reg_3521_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#41 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_145_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5_fu_814/mac_muladd_16s_16s_24ns_24_4_1_U170/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_145_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5_fu_814/mac_muladd_16s_16s_24ns_24_4_1_U170/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#42 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_145_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5_fu_814/mac_muladd_5ns_7ns_7ns_11_4_1_U169/CNN_mac_muladd_5ns_7ns_7ns_11_4_1_DSP48_3_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_145_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5_fu_814/mac_muladd_5ns_7ns_7ns_11_4_1_U169/CNN_mac_muladd_5ns_7ns_7ns_11_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#43 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_15_1_loop_for_ap_0_fu_732/mac_muladd_16s_16s_24ns_24_4_1_U4/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_15_1_loop_for_ap_0_fu_732/mac_muladd_16s_16s_24ns_24_4_1_U4/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#44 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_15_1_loop_for_ap_0_fu_732/mac_muladd_16s_16s_24ns_24_4_1_U5/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_15_1_loop_for_ap_0_fu_732/mac_muladd_16s_16s_24ns_24_4_1_U5/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#45 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_15_1_loop_for_ap_0_fu_732/mac_muladd_16s_16s_24ns_24_4_1_U6/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_15_1_loop_for_ap_0_fu_732/mac_muladd_16s_16s_24ns_24_4_1_U6/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#46 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_15_1_loop_for_ap_0_fu_732/mac_muladd_16s_16s_24ns_24_4_1_U7/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_15_1_loop_for_ap_0_fu_732/mac_muladd_16s_16s_24ns_24_4_1_U7/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#47 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_15_1_loop_for_ap_0_fu_732/tmp_9_reg_750_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_15_1_loop_for_ap_0_fu_732/tmp_9_reg_750_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#48 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_15_1_loop_for_ap_0_fu_732/tmp_9_reg_750_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_15_1_loop_for_ap_0_fu_732/tmp_9_reg_750_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#49 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_171_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6_fu_834/mac_muladd_16s_16s_24ns_24_4_1_U181/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_171_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6_fu_834/mac_muladd_16s_16s_24ns_24_4_1_U181/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#50 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_171_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6_fu_834/mac_muladd_5ns_6ns_6ns_10_4_1_U180/CNN_mac_muladd_5ns_6ns_6ns_10_4_1_DSP48_4_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_171_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6_fu_834/mac_muladd_5ns_6ns_6ns_10_4_1_U180/CNN_mac_muladd_5ns_6ns_6ns_10_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#51 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_197_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7_fu_848/mac_muladd_16s_16s_24ns_24_4_1_U190/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_197_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7_fu_848/mac_muladd_16s_16s_24ns_24_4_1_U190/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#52 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_197_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7_fu_848/mac_muladd_6ns_6ns_6ns_11_4_1_U189/CNN_mac_muladd_6ns_6ns_6ns_11_4_1_DSP48_5_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_197_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7_fu_848/mac_muladd_6ns_6ns_6ns_11_4_1_U189/CNN_mac_muladd_6ns_6ns_6ns_11_4_1_DSP48_5_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#53 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U18/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U18/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#54 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U19/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U19/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#55 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U20/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U20/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#56 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U21/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U21/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#57 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U22/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U22/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#58 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U23/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U23/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#59 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U24/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U24/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#60 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U25/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U25/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#61 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U26/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U26/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#62 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U27/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U27/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#63 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U28/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U28/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#64 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U29/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U29/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#65 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U30/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U30/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#66 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U31/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U31/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#67 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U32/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U32/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#68 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U33/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U33/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#69 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U34/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U34/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#70 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U35/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U35/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#71 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U36/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/mac_muladd_16s_16s_24ns_24_4_1_U36/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#72 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#73 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#74 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U47/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U47/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#75 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U48/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U48/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#76 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U49/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U49/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#77 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U50/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U50/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#78 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U51/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U51/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#79 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U52/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U52/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#80 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U53/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U53/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#81 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U54/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U54/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#82 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U55/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U55/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#83 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U56/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U56/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#84 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U57/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U57/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#85 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U58/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U58/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#86 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U59/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U59/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#87 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U60/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U60/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#88 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U61/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U61/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#89 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U62/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U62/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#90 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U63/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U63/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#91 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U64/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U64/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#92 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U65/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/mac_muladd_16s_16s_24ns_24_4_1_U65/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#93 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/tmp_45_reg_1952_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/tmp_45_reg_1952_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#94 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_fu_871/mul_16s_18ns_34_1_1_U209/tmp_product input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_fu_871/mul_16s_18ns_34_1_1_U209/tmp_product/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#95 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U100/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U100/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#96 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U101/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U101/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#97 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U102/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U102/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#98 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U103/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U103/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#99 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U104/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U104/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#100 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U105/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U105/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#101 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U106/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U106/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#102 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U107/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U107/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#103 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U108/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U108/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#104 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U109/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U109/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#105 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U110/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U110/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#106 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U111/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U111/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#107 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U112/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U112/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#108 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U74/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U74/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#109 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U75/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U75/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#110 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U76/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U76/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#111 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U77/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U77/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#112 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U78/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U78/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#113 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U79/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U79/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#114 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U80/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U80/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#115 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U81/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U81/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#116 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U82/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U82/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#117 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U83/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U83/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#118 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U84/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U84/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#119 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U85/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U85/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#120 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U86/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U86/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#121 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U87/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U87/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#122 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U88/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U88/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#123 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U89/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U89/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#124 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U90/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U90/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#125 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U91/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U91/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#126 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U92/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U92/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#127 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U93/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U93/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#128 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U94/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U94/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#129 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U95/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U95/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#130 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U96/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U96/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#131 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U97/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U97/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#132 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U98/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U98/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#133 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U99/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U99/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#134 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/tmp_s_reg_3514_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/tmp_s_reg_3514_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#135 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U223/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U223/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#136 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U224/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U224/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#137 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U225/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U225/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#138 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U226/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U226/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#139 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U227/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U227/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#140 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U228/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U228/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#141 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U229/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U229/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#142 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U230/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U230/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#143 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U231/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U231/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#144 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U232/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U232/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#145 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U233/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U233/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#146 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U234/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U234/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#147 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U235/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U235/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#148 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U236/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U236/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#149 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U237/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U237/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#150 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U238/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U238/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#151 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U239/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U239/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#152 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U240/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U240/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#153 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U241/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U241/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#154 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U242/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U242/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#155 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U243/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U243/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#156 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U244/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U244/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#157 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U245/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U245/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#158 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U246/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U246/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#159 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U247/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U247/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#160 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U248/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U248/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#161 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U249/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U249/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#162 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U250/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U250/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#163 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U251/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U251/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#164 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U252/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U252/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#165 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U253/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/mac_muladd_16s_12s_24ns_24_4_1_U253/CNN_mac_muladd_16s_12s_24ns_24_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#166 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/tmp_s_reg_2364_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/tmp_s_reg_2364_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#167 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U291/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U291/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#168 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U292/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U292/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#169 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U293/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U293/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#170 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U294/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U294/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#171 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U295/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U295/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#172 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U296/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U296/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#173 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U297/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U297/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#174 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U298/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U298/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#175 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U299/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U299/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#176 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U300/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U300/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#177 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U301/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U301/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#178 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U302/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U302/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#179 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U303/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U303/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#180 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U304/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U304/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#181 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U305/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U305/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#182 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U306/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U306/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#183 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U307/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U307/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#184 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U308/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U308/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#185 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U309/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/mac_muladd_16s_16s_24ns_24_4_1_U309/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#186 Warning
+Input pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/tmp_s_reg_1519_reg input bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/tmp_s_reg_1519_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-4#1 Warning
+MREG Output pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/tmp_s_reg_3521_reg multiplier stage bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/tmp_s_reg_3521_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#2 Warning
+MREG Output pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_15_1_loop_for_ap_0_fu_732/tmp_9_reg_750_reg multiplier stage bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_15_1_loop_for_ap_0_fu_732/tmp_9_reg_750_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#3 Warning
+MREG Output pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg multiplier stage bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746/tmp_17_reg_1914_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#4 Warning
+MREG Output pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/tmp_45_reg_1952_reg multiplier stage bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766/tmp_45_reg_1952_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#5 Warning
+MREG Output pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_fu_871/mul_16s_18ns_34_1_1_U209/tmp_product multiplier stage bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_fu_871/mul_16s_18ns_34_1_1_U209/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#6 Warning
+MREG Output pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/tmp_s_reg_3514_reg multiplier stage bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/tmp_s_reg_3514_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#7 Warning
+MREG Output pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/tmp_s_reg_2364_reg multiplier stage bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/tmp_s_reg_2364_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#8 Warning
+MREG Output pipelining  
+DSP bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/tmp_s_reg_1519_reg multiplier stage bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/tmp_s_reg_1519_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+41 net(s) have no routable loads. The problem bus(es) and/or net(s) are bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800/Weights_address0[3:0],
+bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_171_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6_fu_834/Weights_address0[0],
+bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_171_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6_fu_834/Weights_address0[1],
+bd_0_i/hls_inst/inst/grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/Weights_address0[0],
+bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_detect_fu_956/OutModel[2:0],
+bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886/flow_control_loop_pipe_sequential_init_U/Weights_address0[0],
+bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927/flow_control_loop_pipe_sequential_init_U/Weights_address0[0],
+bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_channel_pad_0_fu_724/flow_control_loop_pipe_sequential_init_U/InModel_address0[1],
+bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_channel_pad_0_fu_724/flow_control_loop_pipe_sequential_init_U/InModel_address0[2],
+bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_channel_pad_0_fu_724/flow_control_loop_pipe_sequential_init_U/InModel_address0[3],
+bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_channel_pad_0_fu_724/flow_control_loop_pipe_sequential_init_U/InModel_address0[4],
+bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_channel_pad_0_fu_724/flow_control_loop_pipe_sequential_init_U/InModel_address0[5],
+bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_channel_pad_0_fu_724/flow_control_loop_pipe_sequential_init_U/InModel_address0[6],
+bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_channel_pad_0_fu_724/flow_control_loop_pipe_sequential_init_U/InModel_address0[7],
+bd_0_i/hls_inst/inst/grp_CNN_Pipeline_loop_for_channel_pad_0_fu_724/flow_control_loop_pipe_sequential_init_U/InModel_address0[8]
+ (the first 15 of 30 listed nets/buses).
+Related violations: <none>
+
+

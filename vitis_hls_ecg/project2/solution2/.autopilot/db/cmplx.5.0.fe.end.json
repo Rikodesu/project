@@ -1,0 +1,457 @@
+{
+    "1": {
+        "name": "CNN_Pipeline_loop_for_3_channel_pad_1_loop_for_channel_pad_1",
+        "file": "CNN.cpp",
+        "fileloc": "33",
+        "instructions": "49",
+        "total_instructions": "49",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "CNN_Pipeline_loop_for_3_channel_pad_7_loop_for_channel_pad_7",
+        "file": "CNN.cpp",
+        "fileloc": "48",
+        "instructions": "51",
+        "total_instructions": "51",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "CNN_Pipeline_VITIS_LOOP_171_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6",
+        "file": "CNN.cpp",
+        "fileloc": "47",
+        "instructions": "132",
+        "total_instructions": "132",
+        "calls": "",
+        "basicblocks": "8",
+        "loads": {
+            "L": "9",
+            "T": "2"
+        },
+        "stores": {
+            "L": "17"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "CNN_Pipeline_VITIS_LOOP_93_1",
+        "file": "CNN.cpp",
+        "fileloc": "51",
+        "instructions": "89",
+        "total_instructions": "89",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "21"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2",
+        "file": "CNN.cpp",
+        "fileloc": "37",
+        "instructions": "333",
+        "total_instructions": "333",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "23",
+            "T": "21"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "6": {
+        "name": "CNN_Pipeline_loop_for_3_channel_pad_2_loop_for_channel_pad_2",
+        "file": "CNN.cpp",
+        "fileloc": "36",
+        "instructions": "49",
+        "total_instructions": "49",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "7": {
+        "name": "CNN_Pipeline_loop_for_3_channel_pad_4_loop_for_channel_pad_4",
+        "file": "CNN.cpp",
+        "fileloc": "41",
+        "instructions": "51",
+        "total_instructions": "51",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "8": {
+        "name": "CNN_Pipeline_loop_for_channel_pool_3_loop_for_weight_pool_3",
+        "file": "CNN.cpp",
+        "fileloc": "50",
+        "instructions": "87",
+        "total_instructions": "87",
+        "calls": "",
+        "basicblocks": "15",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "16"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "9": {
+        "name": "CNN_Pipeline_loop_for_channel_pool_0_loop_for_weight_pool_0",
+        "file": "CNN.cpp",
+        "fileloc": "35",
+        "instructions": "55",
+        "total_instructions": "55",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "10": {
+        "name": "CNN_Pipeline_loop_detect",
+        "file": "CNN.cpp",
+        "fileloc": "53",
+        "instructions": "32",
+        "total_instructions": "32",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "11": {
+        "name": "CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1",
+        "file": "CNN.cpp",
+        "fileloc": "34",
+        "instructions": "329",
+        "total_instructions": "329",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "23",
+            "T": "21"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "12": {
+        "name": "CNN_Pipeline_VITIS_LOOP_145_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5",
+        "file": "CNN.cpp",
+        "fileloc": "44",
+        "instructions": "125",
+        "total_instructions": "125",
+        "calls": "",
+        "basicblocks": "8",
+        "loads": {
+            "L": "9",
+            "T": "2"
+        },
+        "stores": {
+            "L": "17"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "13": {
+        "name": "CNN_Pipeline_loop_for_a_Dense_0",
+        "file": "CNN.cpp",
+        "fileloc": "52",
+        "instructions": "378",
+        "total_instructions": "378",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1",
+            "T": "33"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "14": {
+        "name": "CNN_Pipeline_loop_for_channel_pad_0",
+        "file": "CNN.cpp",
+        "fileloc": "31",
+        "instructions": "26",
+        "total_instructions": "26",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1",
+            "T": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "15": {
+        "name": "CNN_Pipeline_loop_for_channel_pool_1_loop_for_weight_pool_1",
+        "file": "CNN.cpp",
+        "fileloc": "40",
+        "instructions": "58",
+        "total_instructions": "58",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "16": {
+        "name": "CNN_Pipeline_VITIS_LOOP_197_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7",
+        "file": "CNN.cpp",
+        "fileloc": "49",
+        "instructions": "131",
+        "total_instructions": "131",
+        "calls": "",
+        "basicblocks": "8",
+        "loads": {
+            "L": "9",
+            "T": "2"
+        },
+        "stores": {
+            "L": "17"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "17": {
+        "name": "CNN_Pipeline_loop_for_a_Dense_1",
+        "file": "CNN.cpp",
+        "fileloc": "53",
+        "instructions": "241",
+        "total_instructions": "241",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1",
+            "T": "21"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "CNN",
+        "file": "CNN.cpp",
+        "fileloc": "8",
+        "instructions": "173",
+        "total_instructions": "3961",
+        "calls": "14 21 1 11 9 6 5 19 22 15 7 23 20 12 18 24 3 2 16 8 4 13 17 10",
+        "basicblocks": "1",
+        "loads": {
+            "L": "54"
+        }
+    },
+    "18": {
+        "name": "CNN_Pipeline_loop_for_channel_pool_2_loop_for_weight_pool_2",
+        "file": "CNN.cpp",
+        "fileloc": "45",
+        "instructions": "58",
+        "total_instructions": "58",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "19": {
+        "name": "CNN_Pipeline_loop_for_3_channel_pad_3_loop_for_channel_pad_3",
+        "file": "CNN.cpp",
+        "fileloc": "38",
+        "instructions": "51",
+        "total_instructions": "51",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "20": {
+        "name": "CNN_Pipeline_loop_for_3_channel_pad_5_loop_for_channel_pad_5",
+        "file": "CNN.cpp",
+        "fileloc": "43",
+        "instructions": "51",
+        "total_instructions": "51",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "21": {
+        "name": "CNN_Pipeline_VITIS_LOOP_15_1_loop_for_ap_0",
+        "file": "CNN.cpp",
+        "fileloc": "32",
+        "instructions": "118",
+        "total_instructions": "118",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "8",
+            "T": "6"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "22": {
+        "name": "CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3",
+        "file": "CNN.cpp",
+        "fileloc": "39",
+        "instructions": "621",
+        "total_instructions": "621",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "43",
+            "T": "41"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "23": {
+        "name": "CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4",
+        "file": "CNN.cpp",
+        "fileloc": "42",
+        "instructions": "622",
+        "total_instructions": "622",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "43",
+            "T": "41"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "24": {
+        "name": "CNN_Pipeline_loop_for_3_channel_pad_6_loop_for_channel_pad_6",
+        "file": "CNN.cpp",
+        "fileloc": "46",
+        "instructions": "51",
+        "total_instructions": "51",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

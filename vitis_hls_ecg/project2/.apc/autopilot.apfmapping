@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="CNN.cpp" path="F:\Ky2nam3\do_an_1\code\doan1\CNN.cpp"/>
+    <originFiles name="Conv.cpp" path="F:\Ky2nam3\do_an_1\code\doan1\Conv.cpp"/>
+    <originFiles name="Dense.cpp" path="F:\Ky2nam3\do_an_1\code\doan1\Dense.cpp"/>
+    <originFiles name="Pool.cpp" path="F:\Ky2nam3\do_an_1\code\doan1\Pool.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="CNN_tb.cpp" path="F:\Ky2nam3\do_an_1\code\doan1\CNN_tb.cpp"/>
+    <originFiles name="Float_Weights.txt" path="F:\Ky2nam3\do_an_1\code\doan1\Float_Weights.txt"/>
+    <originFiles name="labels1.txt" path="F:\Ky2nam3\do_an_1\code\doan1\labels1.txt"/>
+    <originFiles name="labels2.txt" path="F:\Ky2nam3\do_an_1\code\doan1\labels2.txt"/>
+    <originFiles name="signals1.txt" path="F:\Ky2nam3\do_an_1\code\doan1\signals1.txt"/>
+    <originFiles name="signals2.txt" path="F:\Ky2nam3\do_an_1\code\doan1\signals2.txt"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

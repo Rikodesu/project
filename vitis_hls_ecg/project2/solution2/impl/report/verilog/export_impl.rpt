@@ -1,0 +1,852 @@
+================================================================
+== Vivado Place & Route Results
+================================================================
++ General Information:
+    * Date:            Thu Jun 27 11:14:53 +0700 2024
+    * Version:         2023.1 (Build 3854077 on May  4 2023)
+    * Project:         project2
+    * Solution:        solution2 (Vivado IP Flow Target)
+    * Product family:  zynquplus
+    * Target device:   xck26-sfvc784-2LV-c
+
+
+================================================================
+== Run Constraints & Options
+================================================================
++ Design Constraints & Options:
+    * Place & Route target clock:  5 ns
+    * C-Synthesis target clock:    5 ns
+    * C-Synthesis uncertainty:     27%
+
++ RTL Synthesis Options:
+    * config_export -vivado_synth_strategy:     default
+    * config_export -vivado_synth_design_args:  -directive sdx_optimization_effort_high
+
++ Place & Route Options:
+    * config_export -vivado_impl_strategy:  default
+    * config_export -vivado_phys_opt:       none
+
++ Reporting Options:
+    * config_export -vivado_report_level:      2
+    * config_export -vivado_max_timing_paths:  10
+
+
+================================================================
+== Place & Route Resource Summary
+================================================================
+LUT:              4913
+FF:               3163
+DSP:              189
+BRAM:             31
+URAM:             0
+SRL:              74
+
+
+================================================================
+== Place & Route Timing Summary
+================================================================
+* Timing was met
++----------------+-------------+
+| Timing         | Period (ns) |
++----------------+-------------+
+| Target         | 5.000       |
+| Post-Synthesis | 3.657       |
+| Post-Route     | 4.640       |
++----------------+-------------+
+
+
+================================================================
+== Place & Route Resources
+================================================================
++------------------------------------------------------------------------------------------+------+------+-----+------+------+-----+--------+-----------+---------+---------------------+--------------+
+| Name                                                                                     | LUT  | FF   | DSP | BRAM | URAM | SRL | Pragma | Impl      | Latency | Variable            | Source       |
++------------------------------------------------------------------------------------------+------+------+-----+------+------+-----+--------+-----------+---------+---------------------+--------------+
+| inst                                                                                     | 4913 | 3163 | 189 | 31   |      |     |        |           |         |                     |              |
+|   (inst)                                                                                 | 1    | 793  |     |      |      |     |        |           |         |                     |              |
+|   OutConv0_U                                                                             |      |      |     | 2    |      |     |        |           |         |                     |              |
+|     bind_storage ram_1p                                                                  |      |      |     |      |      |     |        | auto      | 1       | OutConv0            | CNN.cpp:10   |
+|   OutConv1_U                                                                             | 25   |      |     | 2    |      |     |        |           |         |                     |              |
+|     bind_storage ram_s2p                                                                 |      |      |     |      |      |     |        | auto      | 1       | OutConv1            | CNN.cpp:12   |
+|   OutConv2_U                                                                             |      |      |     | 2    |      |     |        |           |         |                     |              |
+|     bind_storage ram_1p                                                                  |      |      |     |      |      |     |        | auto      | 1       | OutConv2            | CNN.cpp:15   |
+|   OutConv3_U                                                                             | 24   |      |     | 2    |      |     |        |           |         |                     |              |
+|     bind_storage ram_s2p                                                                 |      |      |     |      |      |     |        | auto      | 1       | OutConv3            | CNN.cpp:17   |
+|   OutConv4_U                                                                             |      |      |     | 2    |      |     |        |           |         |                     |              |
+|     bind_storage ram_1p                                                                  |      |      |     |      |      |     |        | auto      | 1       | OutConv4            | CNN.cpp:20   |
+|   OutConv5_U                                                                             | 24   |      |     | 2    |      |     |        |           |         |                     |              |
+|     bind_storage ram_s2p                                                                 |      |      |     |      |      |     |        | auto      | 1       | OutConv5            | CNN.cpp:22   |
+|   OutConv6_U                                                                             | 8    |      |     | 2    |      |     |        |           |         |                     |              |
+|     bind_storage ram_1p                                                                  |      |      |     |      |      |     |        | auto      | 1       | OutConv6            | CNN.cpp:25   |
+|   OutConv7_U                                                                             | 24   |      |     | 2    |      |     |        |           |         |                     |              |
+|     bind_storage ram_s2p                                                                 |      |      |     |      |      |     |        | auto      | 1       | OutConv7            | CNN.cpp:27   |
+|   OutDense0_U                                                                            | 64   | 32   |     |      |      |     |        |           |         |                     |              |
+|     bind_storage ram_s2p                                                                 |      |      |     |      |      |     |        | auto      | 1       | OutDense0           | CNN.cpp:30   |
+|   OutGlobalAverPool1D_U                                                                  | 27   | 24   |     |      |      |     |        |           |         |                     |              |
+|     bind_storage ram_s2p                                                                 |      |      |     |      |      |     |        | auto      | 1       | OutGlobalAverPool1D | CNN.cpp:29   |
+|   OutPadConv0_U                                                                          | 8    |      |     | 1    |      |     |        |           |         |                     |              |
+|     bind_storage rom_np                                                                  |      |      |     |      |      |     |        | auto      | 1       | OutPadConv0         | CNN.cpp:9    |
+|   OutPadConv1_U                                                                          | 32   |      |     | 2    |      |     |        |           |         |                     |              |
+|     bind_storage rom_np                                                                  |      |      |     |      |      |     |        | auto      | 1       | OutPadConv1         | CNN.cpp:11   |
+|   OutPadConv2_U                                                                          | 16   |      |     | 1    |      |     |        |           |         |                     |              |
+|     bind_storage rom_np                                                                  |      |      |     |      |      |     |        | auto      | 1       | OutPadConv2         | CNN.cpp:14   |
+|   OutPadConv3_U                                                                          | 32   |      |     | 2    |      |     |        |           |         |                     |              |
+|     bind_storage rom_np                                                                  |      |      |     |      |      |     |        | auto      | 1       | OutPadConv3         | CNN.cpp:16   |
+|   OutPadConv4_U                                                                          | 32   |      |     | 1    |      |     |        |           |         |                     |              |
+|     bind_storage rom_np                                                                  |      |      |     |      |      |     |        | auto      | 1       | OutPadConv4         | CNN.cpp:19   |
+|   OutPadConv5_U                                                                          |      |      |     | 2    |      |     |        |           |         |                     |              |
+|     bind_storage ram_1p                                                                  |      |      |     |      |      |     |        | auto      | 1       | OutPadConv5         | CNN.cpp:21   |
+|   OutPadConv6_U                                                                          |      |      |     | 1    |      |     |        |           |         |                     |              |
+|     bind_storage ram_1p                                                                  |      |      |     |      |      |     |        | auto      | 1       | OutPadConv6         | CNN.cpp:24   |
+|   OutPadConv7_U                                                                          |      |      |     | 2    |      |     |        |           |         |                     |              |
+|     bind_storage ram_1p                                                                  |      |      |     |      |      |     |        | auto      | 1       | OutPadConv7         | CNN.cpp:26   |
+|   OutPool0_U                                                                             |      |      |     | 1    |      |     |        |           |         |                     |              |
+|     bind_storage ram_1p                                                                  |      |      |     |      |      |     |        | auto      | 1       | OutPool0            | CNN.cpp:13   |
+|   OutPool1_U                                                                             |      |      |     | 1    |      |     |        |           |         |                     |              |
+|     bind_storage ram_1p                                                                  |      |      |     |      |      |     |        | auto      | 1       | OutPool1            | CNN.cpp:18   |
+|   OutPool2_U                                                                             | 8    |      |     | 1    |      |     |        |           |         |                     |              |
+|     bind_storage ram_1p                                                                  |      |      |     |      |      |     |        | auto      | 1       | OutPool2            | CNN.cpp:23   |
+|   OutPool3_1_U                                                                           | 32   | 32   |     |      |      |     |        |           |         |                     |              |
+|     bind_storage ram_s2p                                                                 |      |      |     |      |      |     |        | auto      | 1       | OutPool3_1          | CNN.cpp:28   |
+|   OutPool3_2_U                                                                           | 32   | 32   |     |      |      |     |        |           |         |                     |              |
+|     bind_storage ram_s2p                                                                 |      |      |     |      |      |     |        | auto      | 1       | OutPool3_2          | CNN.cpp:28   |
+|   OutPool3_3_U                                                                           | 32   | 32   |     |      |      |     |        |           |         |                     |              |
+|     bind_storage ram_s2p                                                                 |      |      |     |      |      |     |        | auto      | 1       | OutPool3_3          | CNN.cpp:28   |
+|   OutPool3_4_U                                                                           | 34   | 32   |     |      |      |     |        |           |         |                     |              |
+|     bind_storage ram_s2p                                                                 |      |      |     |      |      |     |        | auto      | 1       | OutPool3_4          | CNN.cpp:28   |
+|   OutPool3_5_U                                                                           | 39   | 32   |     |      |      |     |        |           |         |                     |              |
+|     bind_storage ram_s2p                                                                 |      |      |     |      |      |     |        | auto      | 1       | OutPool3_5          | CNN.cpp:28   |
+|   OutPool3_6_U                                                                           | 33   | 32   |     |      |      |     |        |           |         |                     |              |
+|     bind_storage ram_s2p                                                                 |      |      |     |      |      |     |        | auto      | 1       | OutPool3_6          | CNN.cpp:28   |
+|   OutPool3_7_U                                                                           | 33   | 32   |     |      |      |     |        |           |         |                     |              |
+|     bind_storage ram_s2p                                                                 |      |      |     |      |      |     |        | auto      | 1       | OutPool3_7          | CNN.cpp:28   |
+|   OutPool3_8_U                                                                           | 33   | 32   |     |      |      |     |        |           |         |                     |              |
+|     bind_storage ram_s2p                                                                 |      |      |     |      |      |     |        | auto      | 1       | OutPool3_8          | CNN.cpp:28   |
+|   OutPool3_9_U                                                                           | 33   | 32   |     |      |      |     |        |           |         |                     |              |
+|     bind_storage ram_s2p                                                                 |      |      |     |      |      |     |        | auto      | 1       | OutPool3_9          | CNN.cpp:28   |
+|   OutPool3_U                                                                             | 33   | 32   |     |      |      |     |        |           |         |                     |              |
+|     bind_storage ram_s2p                                                                 |      |      |     |      |      |     |        | auto      | 1       | OutPool3            | CNN.cpp:28   |
+|   grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800                                 | 665  | 147  | 40  |      |      |     |        |           |         |                     |              |
+|     (grp_CNN_Pipeline_VITIS_LOOP_119_1_loop_for_ap_4_fu_800)                             | 425  | 145  | 1   |      |      |     |        |           |         |                     |              |
+|     mac_muladd_16s_16s_24ns_24_4_1_U123                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_1         | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_3         | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U124                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_2         | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_6         | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U125                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_3         | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_9         | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U126                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_4         | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_12        | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U127                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_5         | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_15        | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U128                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_6         | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_18        | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U129                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_7         | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_21        | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U130                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_8         | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_24        | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U131                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_9         | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_27        | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U132                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_10        | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_30        | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U133                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_11        | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_33        | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U134                                                  | 19   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_12        | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_36        | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U135                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_13        | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_39        | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U136                                                  | 18   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_14        | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_42        | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U137                                                  | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_15        | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_45        | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U138                                                  | 10   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_16        | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_48        | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U139                                                  | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_17        | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_51        | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U140                                                  | 11   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_18        | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_54        | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U141                                                  | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_19        | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_56        | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U142                                                  | 26   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_20        | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_59        | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U143                                                  | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_21        | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_62        | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U144                                                  | 17   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_22        | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_65        | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U145                                                  | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_23        | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_68        | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U146                                                  | 9    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_24        | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_71        | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U147                                                  | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_25        | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_74        | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U148                                                  | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_26        | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_77        | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U149                                                  | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_27        | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_80        | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U150                                                  | 9    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_28        | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_83        | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U151                                                  | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_29        | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_85        | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U152                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_30        | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_88        | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U153                                                  | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_31        | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_91        | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U154                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_32        | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_94        | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U155                                                  | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_33        | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_97        | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U156                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_34        | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_100       | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U157                                                  | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_35        | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_103       | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U158                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_36        | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_106       | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U159                                                  | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_37        | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_109       | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U160                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_38        | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_112       | Conv.cpp:127 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U161                                                  | 41   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln127_39        | Conv.cpp:127 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln127_115       | Conv.cpp:127 |
+|   grp_CNN_Pipeline_VITIS_LOOP_145_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5_fu_814     | 186  | 167  | 2   |      |      |     |        |           |         |                     |              |
+|     (grp_CNN_Pipeline_VITIS_LOOP_145_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5_fu_814) | 107  | 165  |     |      |      |     |        |           |         |                     |              |
+|     flow_control_loop_pipe_sequential_init_U                                             | 5    | 2    |     |      |      |     |        |           |         |                     |              |
+|     mac_muladd_16s_16s_24ns_24_4_1_U170                                                  | 56   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln153           | Conv.cpp:153 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln153_4         | Conv.cpp:153 |
+|     mac_muladd_5ns_7ns_7ns_11_4_1_U169                                                   | 18   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln152           | Conv.cpp:152 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln153_1         | Conv.cpp:153 |
+|   grp_CNN_Pipeline_VITIS_LOOP_15_1_loop_for_ap_0_fu_732                                  | 172  | 90   | 5   |      |      |     |        |           |         |                     |              |
+|     (grp_CNN_Pipeline_VITIS_LOOP_15_1_loop_for_ap_0_fu_732)                              | 54   | 88   | 1   |      |      |     |        |           |         |                     |              |
+|     flow_control_loop_pipe_sequential_init_U                                             | 61   | 2    |     |      |      |     |        |           |         |                     |              |
+|     mac_muladd_16s_16s_24ns_24_4_1_U4                                                    |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln23_1          | Conv.cpp:23  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln23_2          | Conv.cpp:23  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U5                                                    | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln23_2          | Conv.cpp:23  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln23_5          | Conv.cpp:23  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U6                                                    | 18   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln23_3          | Conv.cpp:23  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln23_8          | Conv.cpp:23  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U7                                                    | 41   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln23_4          | Conv.cpp:23  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln23_11         | Conv.cpp:23  |
+|   grp_CNN_Pipeline_VITIS_LOOP_171_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6_fu_834     | 181  | 168  | 2   |      |      |     |        |           |         |                     |              |
+|     (grp_CNN_Pipeline_VITIS_LOOP_171_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6_fu_834) | 104  | 166  |     |      |      |     |        |           |         |                     |              |
+|     flow_control_loop_pipe_sequential_init_U                                             | 4    | 2    |     |      |      |     |        |           |         |                     |              |
+|     mac_muladd_16s_16s_24ns_24_4_1_U181                                                  | 56   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln179           | Conv.cpp:179 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln179_4         | Conv.cpp:179 |
+|     mac_muladd_5ns_6ns_6ns_10_4_1_U180                                                   | 17   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln178           | Conv.cpp:178 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln179_1         | Conv.cpp:179 |
+|   grp_CNN_Pipeline_VITIS_LOOP_197_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7_fu_848     | 191  | 176  | 2   |      |      |     |        |           |         |                     |              |
+|     (grp_CNN_Pipeline_VITIS_LOOP_197_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7_fu_848) | 113  | 174  |     |      |      |     |        |           |         |                     |              |
+|     flow_control_loop_pipe_sequential_init_U                                             | 4    | 2    |     |      |      |     |        |           |         |                     |              |
+|     mac_muladd_16s_16s_24ns_24_4_1_U190                                                  | 56   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln205           | Conv.cpp:205 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln205_4         | Conv.cpp:205 |
+|     mac_muladd_6ns_6ns_6ns_11_4_1_U189                                                   | 19   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln204           | Conv.cpp:204 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln205_1         | Conv.cpp:205 |
+|   grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746                                  | 340  | 98   | 20  |      |      |     |        |           |         |                     |              |
+|     (grp_CNN_Pipeline_VITIS_LOOP_41_1_loop_for_ap_1_fu_746)                              | 162  | 96   | 1   |      |      |     |        |           |         |                     |              |
+|     flow_control_loop_pipe_sequential_init_U                                             | 98   | 2    |     |      |      |     |        |           |         |                     |              |
+|     mac_muladd_16s_16s_24ns_24_4_1_U18                                                   |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln49_1          | Conv.cpp:49  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln49_3          | Conv.cpp:49  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U19                                                   |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln49_2          | Conv.cpp:49  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln49_6          | Conv.cpp:49  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U20                                                   |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln49_3          | Conv.cpp:49  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln49_9          | Conv.cpp:49  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U21                                                   |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln49_4          | Conv.cpp:49  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln49_12         | Conv.cpp:49  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U22                                                   |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln49_5          | Conv.cpp:49  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln49_15         | Conv.cpp:49  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U23                                                   |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln49_6          | Conv.cpp:49  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln49_18         | Conv.cpp:49  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U24                                                   |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln49_7          | Conv.cpp:49  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln49_21         | Conv.cpp:49  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U25                                                   |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln49_8          | Conv.cpp:49  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln49_24         | Conv.cpp:49  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U26                                                   |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln49_9          | Conv.cpp:49  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln49_27         | Conv.cpp:49  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U27                                                   | 10   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln49_10         | Conv.cpp:49  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln49_30         | Conv.cpp:49  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U28                                                   | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln49_11         | Conv.cpp:49  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln49_33         | Conv.cpp:49  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U29                                                   | 9    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln49_12         | Conv.cpp:49  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln49_36         | Conv.cpp:49  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U30                                                   | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln49_13         | Conv.cpp:49  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln49_39         | Conv.cpp:49  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U31                                                   | 10   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln49_14         | Conv.cpp:49  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln49_42         | Conv.cpp:49  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U32                                                   | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln49_15         | Conv.cpp:49  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln49_45         | Conv.cpp:49  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U33                                                   | 9    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln49_16         | Conv.cpp:49  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln49_48         | Conv.cpp:49  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U34                                                   | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln49_17         | Conv.cpp:49  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln49_51         | Conv.cpp:49  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U35                                                   |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln49_18         | Conv.cpp:49  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln49_54         | Conv.cpp:49  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U36                                                   | 41   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln49_19         | Conv.cpp:49  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln49_57         | Conv.cpp:49  |
+|   grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766                                  | 418  | 127  | 20  |      |      |     |        |           |         |                     |              |
+|     (grp_CNN_Pipeline_VITIS_LOOP_67_1_loop_for_ap_2_fu_766)                              | 227  | 125  | 1   |      |      |     |        |           |         |                     |              |
+|     flow_control_loop_pipe_sequential_init_U                                             | 76   | 2    |     |      |      |     |        |           |         |                     |              |
+|     mac_muladd_16s_16s_24ns_24_4_1_U47                                                   |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln75_1          | Conv.cpp:75  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln75_3          | Conv.cpp:75  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U48                                                   |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln75_2          | Conv.cpp:75  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln75_6          | Conv.cpp:75  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U49                                                   |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln75_3          | Conv.cpp:75  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln75_9          | Conv.cpp:75  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U50                                                   |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln75_4          | Conv.cpp:75  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln75_12         | Conv.cpp:75  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U51                                                   |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln75_5          | Conv.cpp:75  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln75_15         | Conv.cpp:75  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U52                                                   | 17   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln75_6          | Conv.cpp:75  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln75_18         | Conv.cpp:75  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U53                                                   |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln75_7          | Conv.cpp:75  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln75_21         | Conv.cpp:75  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U54                                                   | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln75_8          | Conv.cpp:75  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln75_24         | Conv.cpp:75  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U55                                                   | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln75_9          | Conv.cpp:75  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln75_27         | Conv.cpp:75  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U56                                                   | 18   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln75_10         | Conv.cpp:75  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln75_30         | Conv.cpp:75  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U57                                                   | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln75_11         | Conv.cpp:75  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln75_33         | Conv.cpp:75  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U58                                                   | 9    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln75_12         | Conv.cpp:75  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln75_36         | Conv.cpp:75  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U59                                                   | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln75_13         | Conv.cpp:75  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln75_39         | Conv.cpp:75  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U60                                                   | 18   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln75_14         | Conv.cpp:75  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln75_42         | Conv.cpp:75  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U61                                                   | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln75_15         | Conv.cpp:75  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln75_45         | Conv.cpp:75  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U62                                                   | 9    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln75_16         | Conv.cpp:75  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln75_48         | Conv.cpp:75  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U63                                                   | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln75_17         | Conv.cpp:75  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln75_51         | Conv.cpp:75  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U64                                                   |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln75_18         | Conv.cpp:75  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln75_54         | Conv.cpp:75  |
+|     mac_muladd_16s_16s_24ns_24_4_1_U65                                                   | 41   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln75_19         | Conv.cpp:75  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln75_57         | Conv.cpp:75  |
+|   grp_CNN_Pipeline_VITIS_LOOP_93_1_fu_871                                                | 262  | 75   | 1   |      |      |     |        |           |         |                     |              |
+|     (grp_CNN_Pipeline_VITIS_LOOP_93_1_fu_871)                                            | 201  | 73   |     |      |      |     |        |           |         |                     |              |
+|     flow_control_loop_pipe_sequential_init_U                                             | 15   | 2    |     |      |      |     |        |           |         |                     |              |
+|     mul_16s_18ns_34_1_1_U209                                                             | 46   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | auto      | 0       | mul_ln98            | Pool.cpp:98  |
+|   grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780                                  | 692  | 134  | 40  |      |      |     |        |           |         |                     |              |
+|     (grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780)                              | 444  | 132  | 1   |      |      |     |        |           |         |                     |              |
+|     flow_control_loop_pipe_sequential_init_U                                             | 84   | 2    |     |      |      |     |        |           |         |                     |              |
+|     mac_muladd_16s_16s_24ns_24_4_1_U100                                                  | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_27        | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_81        | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U101                                                  | 9    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_28        | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_84        | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U102                                                  | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_29        | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_87        | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U103                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_30        | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_90        | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U104                                                  | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_31        | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_93        | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U105                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_32        | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_96        | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U106                                                  | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_33        | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_99        | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U107                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_34        | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_102       | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U108                                                  | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_35        | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_105       | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U109                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_36        | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_108       | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U110                                                  | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_37        | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_111       | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U111                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_38        | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_114       | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U112                                                  | 41   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_39        | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_117       | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U74                                                   |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_1         | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_3         | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U75                                                   |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_2         | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_6         | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U76                                                   |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_3         | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_9         | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U77                                                   |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_4         | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_12        | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U78                                                   |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_5         | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_15        | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U79                                                   |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_6         | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_18        | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U80                                                   |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_7         | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_21        | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U81                                                   |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_8         | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_24        | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U82                                                   |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_9         | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_27        | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U83                                                   |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_10        | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_30        | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U84                                                   |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_11        | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_33        | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U85                                                   | 18   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_12        | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_36        | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U86                                                   |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_13        | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_39        | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U87                                                   | 18   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_14        | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_42        | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U88                                                   | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_15        | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_45        | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U89                                                   | 10   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_16        | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_48        | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U90                                                   | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_17        | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_51        | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U91                                                   | 11   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_18        | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_54        | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U92                                                   | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_19        | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_57        | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U93                                                   | 26   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_20        | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_60        | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U94                                                   | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_21        | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_63        | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U95                                                   | 18   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_22        | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_66        | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U96                                                   | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_23        | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_69        | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U97                                                   | 9    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_24        | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_72        | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U98                                                   | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_25        | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_75        | Conv.cpp:101 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U99                                                   | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln101_26        | Conv.cpp:101 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln101_78        | Conv.cpp:101 |
+|   grp_CNN_Pipeline_loop_detect_fu_956                                                    | 28   | 28   |     |      |      |     |        |           |         |                     |              |
+|     (grp_CNN_Pipeline_loop_detect_fu_956)                                                | 1    | 26   |     |      |      |     |        |           |         |                     |              |
+|     flow_control_loop_pipe_sequential_init_U                                             | 27   | 2    |     |      |      |     |        |           |         |                     |              |
+|   grp_CNN_Pipeline_loop_for_3_channel_pad_1_loop_for_channel_pad_1_fu_740                | 75   | 56   |     |      |      |     |        |           |         |                     |              |
+|     (grp_CNN_Pipeline_loop_for_3_channel_pad_1_loop_for_channel_pad_1_fu_740)            | 45   | 54   |     |      |      |     |        |           |         |                     |              |
+|     flow_control_loop_pipe_sequential_init_U                                             | 30   | 2    |     |      |      |     |        |           |         |                     |              |
+|   grp_CNN_Pipeline_loop_for_3_channel_pad_2_loop_for_channel_pad_2_fu_760                | 68   | 48   |     |      |      |     |        |           |         |                     |              |
+|     (grp_CNN_Pipeline_loop_for_3_channel_pad_2_loop_for_channel_pad_2_fu_760)            | 40   | 46   |     |      |      |     |        |           |         |                     |              |
+|     flow_control_loop_pipe_sequential_init_U                                             | 28   | 2    |     |      |      |     |        |           |         |                     |              |
+|     mul_3ns_9ns_9_1_1_U42                                                                |      |      |     |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | auto      | 0       | mul_ln59            | Conv.cpp:59  |
+|   grp_CNN_Pipeline_loop_for_3_channel_pad_3_loop_for_channel_pad_3_fu_774                | 66   | 60   | 1   |      |      |     |        |           |         |                     |              |
+|     (grp_CNN_Pipeline_loop_for_3_channel_pad_3_loop_for_channel_pad_3_fu_774)            | 29   | 58   |     |      |      |     |        |           |         |                     |              |
+|     flow_control_loop_pipe_sequential_init_U                                             | 37   | 2    |     |      |      |     |        |           |         |                     |              |
+|     mac_muladd_4ns_8ns_8ns_11_4_1_U69                                                    |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln85            | Conv.cpp:85  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln86            | Conv.cpp:86  |
+|   grp_CNN_Pipeline_loop_for_3_channel_pad_4_loop_for_channel_pad_4_fu_794                | 63   | 55   | 1   |      |      |     |        |           |         |                     |              |
+|     (grp_CNN_Pipeline_loop_for_3_channel_pad_4_loop_for_channel_pad_4_fu_794)            | 35   | 53   |     |      |      |     |        |           |         |                     |              |
+|     flow_control_loop_pipe_sequential_init_U                                             | 26   | 2    |     |      |      |     |        |           |         |                     |              |
+|     mac_muladd_4ns_7ns_7ns_10_4_1_U118                                                   | 3    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln111           | Conv.cpp:111 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln112           | Conv.cpp:112 |
+|   grp_CNN_Pipeline_loop_for_3_channel_pad_5_loop_for_channel_pad_5_fu_808                | 61   | 59   | 1   |      |      |     |        |           |         |                     |              |
+|     (grp_CNN_Pipeline_loop_for_3_channel_pad_5_loop_for_channel_pad_5_fu_808)            | 27   | 57   |     |      |      |     |        |           |         |                     |              |
+|     flow_control_loop_pipe_sequential_init_U                                             | 33   | 2    |     |      |      |     |        |           |         |                     |              |
+|     mac_muladd_5ns_7ns_7ns_11_4_1_U165                                                   | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln137           | Conv.cpp:137 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln138           | Conv.cpp:138 |
+|   grp_CNN_Pipeline_loop_for_3_channel_pad_6_loop_for_channel_pad_6_fu_828                | 49   | 54   | 1   |      |      |     |        |           |         |                     |              |
+|     (grp_CNN_Pipeline_loop_for_3_channel_pad_6_loop_for_channel_pad_6_fu_828)            | 21   | 52   |     |      |      |     |        |           |         |                     |              |
+|     flow_control_loop_pipe_sequential_init_U                                             | 28   | 2    |     |      |      |     |        |           |         |                     |              |
+|     mac_muladd_5ns_6ns_6ns_10_4_1_U176                                                   | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln163           | Conv.cpp:163 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln164           | Conv.cpp:164 |
+|   grp_CNN_Pipeline_loop_for_3_channel_pad_7_loop_for_channel_pad_7_fu_842                | 54   | 58   | 1   |      |      |     |        |           |         |                     |              |
+|     (grp_CNN_Pipeline_loop_for_3_channel_pad_7_loop_for_channel_pad_7_fu_842)            | 25   | 56   |     |      |      |     |        |           |         |                     |              |
+|     flow_control_loop_pipe_sequential_init_U                                             | 29   | 2    |     |      |      |     |        |           |         |                     |              |
+|     mac_muladd_6ns_6ns_6ns_11_4_1_U185                                                   | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln189           | Conv.cpp:189 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln190           | Conv.cpp:190 |
+|   grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886                                             | 246  | 39   | 32  |      |      |     |        |           |         |                     |              |
+|     (grp_CNN_Pipeline_loop_for_a_Dense_0_fu_886)                                         | 95   | 37   | 1   |      |      |     |        |           |         |                     |              |
+|     flow_control_loop_pipe_sequential_init_U                                             | 45   | 2    |     |      |      |     |        |           |         |                     |              |
+|     mac_muladd_16s_12s_24ns_24_4_1_U223                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln9_1           | Dense.cpp:9  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln9_2           | Dense.cpp:9  |
+|     mac_muladd_16s_12s_24ns_24_4_1_U224                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln9_2           | Dense.cpp:9  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln9_4           | Dense.cpp:9  |
+|     mac_muladd_16s_12s_24ns_24_4_1_U225                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln9_3           | Dense.cpp:9  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln9_6           | Dense.cpp:9  |
+|     mac_muladd_16s_12s_24ns_24_4_1_U226                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln9_4           | Dense.cpp:9  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln9_8           | Dense.cpp:9  |
+|     mac_muladd_16s_12s_24ns_24_4_1_U227                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln9_5           | Dense.cpp:9  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln9_9           | Dense.cpp:9  |
+|     mac_muladd_16s_12s_24ns_24_4_1_U228                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln9_6           | Dense.cpp:9  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln9_11          | Dense.cpp:9  |
+|     mac_muladd_16s_12s_24ns_24_4_1_U229                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln9_7           | Dense.cpp:9  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln9_13          | Dense.cpp:9  |
+|     mac_muladd_16s_12s_24ns_24_4_1_U230                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln9_8           | Dense.cpp:9  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln9_15          | Dense.cpp:9  |
+|     mac_muladd_16s_12s_24ns_24_4_1_U231                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln9_9           | Dense.cpp:9  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln9_17          | Dense.cpp:9  |
+|     mac_muladd_16s_12s_24ns_24_4_1_U232                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln9_10          | Dense.cpp:9  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln9_19          | Dense.cpp:9  |
+|     mac_muladd_16s_12s_24ns_24_4_1_U233                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln9_11          | Dense.cpp:9  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln9_21          | Dense.cpp:9  |
+|     mac_muladd_16s_12s_24ns_24_4_1_U234                                                  | 9    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln9_12          | Dense.cpp:9  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln9_23          | Dense.cpp:9  |
+|     mac_muladd_16s_12s_24ns_24_4_1_U235                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln9_13          | Dense.cpp:9  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln9_24          | Dense.cpp:9  |
+|     mac_muladd_16s_12s_24ns_24_4_1_U236                                                  | 18   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln9_14          | Dense.cpp:9  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln9_26          | Dense.cpp:9  |
+|     mac_muladd_16s_12s_24ns_24_4_1_U237                                                  | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln9_15          | Dense.cpp:9  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln9_28          | Dense.cpp:9  |
+|     mac_muladd_16s_12s_24ns_24_4_1_U238                                                  | 9    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln9_16          | Dense.cpp:9  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln9_30          | Dense.cpp:9  |
+|     mac_muladd_16s_12s_24ns_24_4_1_U239                                                  | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln9_17          | Dense.cpp:9  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln9_32          | Dense.cpp:9  |
+|     mac_muladd_16s_12s_24ns_24_4_1_U240                                                  | 10   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln9_18          | Dense.cpp:9  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln9_34          | Dense.cpp:9  |
+|     mac_muladd_16s_12s_24ns_24_4_1_U241                                                  | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln9_19          | Dense.cpp:9  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln9_36          | Dense.cpp:9  |
+|     mac_muladd_16s_12s_24ns_24_4_1_U242                                                  | 9    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln9_20          | Dense.cpp:9  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln9_38          | Dense.cpp:9  |
+|     mac_muladd_16s_12s_24ns_24_4_1_U243                                                  | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln9_21          | Dense.cpp:9  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln9_39          | Dense.cpp:9  |
+|     mac_muladd_16s_12s_24ns_24_4_1_U244                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln9_22          | Dense.cpp:9  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln9_41          | Dense.cpp:9  |
+|     mac_muladd_16s_12s_24ns_24_4_1_U245                                                  | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln9_23          | Dense.cpp:9  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln9_43          | Dense.cpp:9  |
+|     mac_muladd_16s_12s_24ns_24_4_1_U246                                                  | 9    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln9_24          | Dense.cpp:9  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln9_45          | Dense.cpp:9  |
+|     mac_muladd_16s_12s_24ns_24_4_1_U247                                                  | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln9_25          | Dense.cpp:9  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln9_47          | Dense.cpp:9  |
+|     mac_muladd_16s_12s_24ns_24_4_1_U248                                                  | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln9_26          | Dense.cpp:9  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln9_49          | Dense.cpp:9  |
+|     mac_muladd_16s_12s_24ns_24_4_1_U249                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln9_27          | Dense.cpp:9  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln9_51          | Dense.cpp:9  |
+|     mac_muladd_16s_12s_24ns_24_4_1_U250                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln9_28          | Dense.cpp:9  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln9_53          | Dense.cpp:9  |
+|     mac_muladd_16s_12s_24ns_24_4_1_U251                                                  | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln9_29          | Dense.cpp:9  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln9_54          | Dense.cpp:9  |
+|     mac_muladd_16s_12s_24ns_24_4_1_U252                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln9_30          | Dense.cpp:9  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln9_56          | Dense.cpp:9  |
+|     mac_muladd_16s_12s_24ns_24_4_1_U253                                                  | 41   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln9_31          | Dense.cpp:9  |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln9_58          | Dense.cpp:9  |
+|   grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927                                             | 149  | 27   | 20  |      |      |     |        |           |         |                     |              |
+|     (grp_CNN_Pipeline_loop_for_a_Dense_1_fu_927)                                         | 61   | 25   | 1   |      |      |     |        |           |         |                     |              |
+|     flow_control_loop_pipe_sequential_init_U                                             | 34   | 2    |     |      |      |     |        |           |         |                     |              |
+|     mac_muladd_16s_16s_24ns_24_4_1_U291                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln21_1          | Dense.cpp:21 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln21_1          | Dense.cpp:21 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U292                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln21_2          | Dense.cpp:21 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln21_3          | Dense.cpp:21 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U293                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln21_3          | Dense.cpp:21 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln21_5          | Dense.cpp:21 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U294                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln21_4          | Dense.cpp:21 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln21_7          | Dense.cpp:21 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U295                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln21_5          | Dense.cpp:21 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln21_9          | Dense.cpp:21 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U296                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln21_6          | Dense.cpp:21 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln21_11         | Dense.cpp:21 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U297                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln21_7          | Dense.cpp:21 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln21_13         | Dense.cpp:21 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U298                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln21_8          | Dense.cpp:21 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln21_14         | Dense.cpp:21 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U299                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln21_9          | Dense.cpp:21 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln21_16         | Dense.cpp:21 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U300                                                  | 10   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln21_10         | Dense.cpp:21 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln21_18         | Dense.cpp:21 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U301                                                  | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln21_11         | Dense.cpp:21 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln21_20         | Dense.cpp:21 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U302                                                  | 9    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln21_12         | Dense.cpp:21 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln21_22         | Dense.cpp:21 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U303                                                  | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln21_13         | Dense.cpp:21 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln21_24         | Dense.cpp:21 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U304                                                  | 10   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln21_14         | Dense.cpp:21 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln21_26         | Dense.cpp:21 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U305                                                  | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln21_15         | Dense.cpp:21 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln21_28         | Dense.cpp:21 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U306                                                  | 9    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln21_16         | Dense.cpp:21 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln21_29         | Dense.cpp:21 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U307                                                  | 1    |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln21_17         | Dense.cpp:21 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln21_31         | Dense.cpp:21 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U308                                                  |      |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln21_18         | Dense.cpp:21 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln21_33         | Dense.cpp:21 |
+|     mac_muladd_16s_16s_24ns_24_4_1_U309                                                  | 17   |      | 1   |      |      |     |        |           |         |                     |              |
+|       bind_op mul                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | mul_ln21_19         | Dense.cpp:21 |
+|       bind_op add                                                                        |      |      |     |      |      |     |        | dsp_slice | 3       | add_ln21_35         | Dense.cpp:21 |
+|   grp_CNN_Pipeline_loop_for_channel_pad_0_fu_724                                         | 50   | 21   |     |      |      |     |        |           |         |                     |              |
+|     (grp_CNN_Pipeline_loop_for_channel_pad_0_fu_724)                                     | 22   | 19   |     |      |      |     |        |           |         |                     |              |
+|     flow_control_loop_pipe_sequential_init_U                                             | 28   | 2    |     |      |      |     |        |           |         |                     |              |
+|   grp_CNN_Pipeline_loop_for_channel_pool_0_loop_for_weight_pool_0_fu_754                 | 52   | 61   |     |      |      |     |        |           |         |                     |              |
+|     (grp_CNN_Pipeline_loop_for_channel_pool_0_loop_for_weight_pool_0_fu_754)             | 14   | 59   |     |      |      |     |        |           |         |                     |              |
+|     flow_control_loop_pipe_sequential_init_U                                             | 38   | 2    |     |      |      |     |        |           |         |                     |              |
+|   grp_CNN_Pipeline_loop_for_channel_pool_1_loop_for_weight_pool_1_fu_788                 | 48   | 73   |     |      |      |     |        |           |         |                     |              |
+|     (grp_CNN_Pipeline_loop_for_channel_pool_1_loop_for_weight_pool_1_fu_788)             | 25   | 71   |     |      |      |     |        |           |         |                     |              |
+|     flow_control_loop_pipe_sequential_init_U                                             | 23   | 2    |     |      |      |     |        |           |         |                     |              |
+|   grp_CNN_Pipeline_loop_for_channel_pool_2_loop_for_weight_pool_2_fu_822                 | 49   | 73   |     |      |      |     |        |           |         |                     |              |
+|     (grp_CNN_Pipeline_loop_for_channel_pool_2_loop_for_weight_pool_2_fu_822)             | 30   | 71   |     |      |      |     |        |           |         |                     |              |
+|     flow_control_loop_pipe_sequential_init_U                                             | 19   | 2    |     |      |      |     |        |           |         |                     |              |
+|   grp_CNN_Pipeline_loop_for_channel_pool_3_loop_for_weight_pool_3_fu_856                 | 81   | 84   |     |      |      |     |        |           |         |                     |              |
+|     (grp_CNN_Pipeline_loop_for_channel_pool_3_loop_for_weight_pool_3_fu_856)             | 36   | 68   |     |      |      |     |        |           |         |                     |              |
+|     flow_control_loop_pipe_sequential_init_U                                             | 20   | 2    |     |      |      |     |        |           |         |                     |              |
+|     urem_5ns_5ns_4_9_1_U194                                                              | 25   | 14   |     |      |      |     |        |           |         |                     |              |
+|       (urem_5ns_5ns_4_9_1_U194)                                                          | 16   | 4    |     |      |      |     |        |           |         |                     |              |
+|   out_Dense_U                                                                            | 16   | 16   |     |      |      |     |        |           |         |                     |              |
+|     bind_storage ram_1p                                                                  |      |      |     |      |      |     |        | auto      | 1       | out_Dense           | Dense.cpp:15 |
++------------------------------------------------------------------------------------------+------+------+-----+------+------+-----+--------+-----------+---------+---------------------+--------------+
+
+
+================================================================
+== Place & Route Fail Fast
+================================================================
++-----------------------------------------------------------+-----------+--------+--------+
+| Criteria                                                  | Guideline | Actual | Status |
++-----------------------------------------------------------+-----------+--------+--------+
+| LUT                                                       | 70%       | 4.19%  | OK     |
+| FD                                                        | 50%       | 1.35%  | OK     |
+| LUTRAM+SRL                                                | 25%       | 0.77%  | OK     |
+| CARRY8                                                    | 25%       | 0.70%  | OK     |
+| MUXF7                                                     | 15%       | 0.03%  | OK     |
+| DSP                                                       | 80%       | 15.14% | OK     |
+| RAMB/FIFO                                                 | 80%       | 10.76% | OK     |
+| URAM                                                      | 80%       | 0.00%  | OK     |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 12.95% | OK     |
+| BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
+| DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
+| MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
+| Control Sets                                              | 2196      | 143    | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 0      | OK     |
+| Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| TIMING-6 (No common primary clock between related clocks) | 0         | 0      | OK     |
+| TIMING-7 (No common node between related clocks)          | 0         | 0      | OK     |
+| TIMING-8 (No common period between related clocks)        | 0         | 0      | OK     |
+| TIMING-14 (LUT on the clock tree)                         | 0         | 0      | OK     |
+| TIMING-35 (No common node in paths with the same clock)   | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| Number of paths above max LUT budgeting (0.391ns)         | 0         | 0      | OK     |
+| Number of paths above max Net budgeting (0.263ns)         | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+
+
+================================================================
+== Place & Route Timing Paths
+================================================================
+* Timing was met
++-------+-------+-----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path  | SLACK | STARTPOINT PIN                          | ENDPOINT PIN                                                                                                                                                             | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
+|       |       |                                         |                                                                                                                                                                          |              |            |                |          DELAY |        DELAY |
++-------+-------+-----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path1 | 0.360 | OutPadConv3_U/ram0_reg_bram_0/CLKARDCLK | grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U92/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST/A[27]  |            0 |        201 |          4.019 |          1.296 |        2.723 |
+| Path2 | 0.375 | OutPadConv3_U/ram0_reg_bram_0/CLKARDCLK | grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U92/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST/A[28]  |            0 |        201 |          3.980 |          1.296 |        2.684 |
+| Path3 | 0.384 | OutPadConv3_U/ram0_reg_bram_0/CLKARDCLK | grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U94/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST/A[18]  |            0 |        201 |          4.022 |          1.296 |        2.726 |
+| Path4 | 0.403 | OutPadConv3_U/ram0_reg_bram_0/CLKARDCLK | grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U92/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST/A[29]  |            0 |        201 |          3.988 |          1.296 |        2.692 |
+| Path5 | 0.405 | OutPadConv3_U/ram0_reg_bram_0/CLKARDCLK | grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U104/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST/A[23] |            0 |        201 |          3.967 |          1.296 |        2.671 |
++-------+-------+-----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+
+    +-------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path1 Cells                                                                                                                                                       | Primitive Type         |
+    +-------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | OutPadConv3_U/ram0_reg_bram_0                                                                                                                                     | BLOCKRAM.BRAM.RAMB36E2 |
+    | grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U92/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    +-------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+
+    +-------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path2 Cells                                                                                                                                                       | Primitive Type         |
+    +-------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | OutPadConv3_U/ram0_reg_bram_0                                                                                                                                     | BLOCKRAM.BRAM.RAMB36E2 |
+    | grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U92/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    +-------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+
+    +-------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path3 Cells                                                                                                                                                       | Primitive Type         |
+    +-------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | OutPadConv3_U/ram0_reg_bram_0                                                                                                                                     | BLOCKRAM.BRAM.RAMB36E2 |
+    | grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U94/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    +-------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+
+    +-------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path4 Cells                                                                                                                                                       | Primitive Type         |
+    +-------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | OutPadConv3_U/ram0_reg_bram_0                                                                                                                                     | BLOCKRAM.BRAM.RAMB36E2 |
+    | grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U92/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    +-------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+
+    +--------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path5 Cells                                                                                                                                                        | Primitive Type         |
+    +--------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | OutPadConv3_U/ram0_reg_bram_0                                                                                                                                      | BLOCKRAM.BRAM.RAMB36E2 |
+    | grp_CNN_Pipeline_VITIS_LOOP_93_1_loop_for_ap_3_fu_780/mac_muladd_16s_16s_24ns_24_4_1_U104/CNN_mac_muladd_16s_16s_24ns_24_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    +--------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+
+
+================================================================
+== Place & Route Vivado Reports
+================================================================
++--------------------------+-------------------------------------------------------------+
+| Report Type              | Report Location                                             |
++--------------------------+-------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/CNN_design_analysis_routed.rpt          |
+| failfast                 | impl/verilog/report/CNN_failfast_routed.rpt                 |
+| status                   | impl/verilog/report/CNN_status_routed.rpt                   |
+| timing                   | impl/verilog/report/CNN_timing_routed.rpt                   |
+| timing_paths             | impl/verilog/report/CNN_timing_paths_routed.rpt             |
+| utilization              | impl/verilog/report/CNN_utilization_routed.rpt              |
+| utilization_hierarchical | impl/verilog/report/CNN_utilization_hierarchical_routed.rpt |
++--------------------------+-------------------------------------------------------------+
+
+
