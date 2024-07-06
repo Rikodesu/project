@@ -34,9 +34,8 @@ def mit_bih_dataset():
                 filename_lr = os.path.join(data_dir, file_name)
                 channel_n = channel_convert[channel_name]
                 file_cutpoint.append((filename_lr, start_p, end_p, channel_n, annotation.symbol[inx]))
-        print(sample + int(length/2))
     
-    with open('dataset2.csv', 'w', newline='') as newfile:
+    with open('dataset.csv', 'w', newline='') as newfile:
         writer = csv.writer(newfile)
         writer.writerow(['filename_lr','start','end', 'channel', 'Label'])
         for row in file_cutpoint[1:-1]:
