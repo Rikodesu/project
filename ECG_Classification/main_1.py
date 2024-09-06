@@ -22,7 +22,6 @@ import wfdb
 
 from preprocessing import butter_bandpass_filter
 from modeltest import CustomModel
-from model_test import MiniInceptionTime, MiniInceptionTimeV1
 import json
 
 def initialize_seed(seed):
@@ -52,25 +51,6 @@ def initialization(seed=0):
 
 
 def calculate_metrics(y_true, y_pred, average='macro'):
-    # # Calculate confusion matrix
-    # tn, fp, fn, tp = confusion_matrix(y_true, y_pred).ravel()
-    #
-    # # Calculate accuracy
-    # accuracy = accuracy_score(y_true, y_pred)
-    #
-    # # Calculate sensitivity (recall)
-    # sensitivity = recall_score(y_true, y_pred)
-    #
-    # # Calculate specificity
-    # specificity = tn / (tn + fp)
-    #
-    # # Calculate positive predictive value (PPV or precision)
-    # ppv = precision_score(y_true, y_pred)
-    #
-    # # Calculate F1 score
-    # f1 = f1_score(y_true, y_pred)
-
-    # Confusion matrix
     cm = confusion_matrix(y_true, y_pred)
 
     # Accuracy
@@ -193,8 +173,6 @@ def train(params, save_model_path, device='cpu'):
     # define model
     model = CustomModel(in_length=params['in_length'], in_channels=params['in_channels'], 
                         first_width=params['first_width'], num_classes=params['num_classes']).to(device)
-    #model = MiniInceptionTime(in_channel=1, d_model=32, num_classes=5).to(device)
-    #model = MiniInceptionTimeV1(in_channel=1, d_model=32, num_classes=5).to(device)
     print('Number of model parameters:', sum(p.numel() for p in model.parameters() if p.requires_grad))
 
     # get criterion, optimizer/scheduler
@@ -282,8 +260,6 @@ def test(params, save_model_path, mode='metric', device='cpu'):
     # load model
     model = CustomModel(in_length=params['in_length'], in_channels=params['in_channels'], 
                         first_width=params['first_width'], num_classes=params['num_classes']).to(device)
-    #model = MiniInceptionTimeV1(in_channel=params['in_channels'], 
-    #                            d_model=params['in_length'], num_classes=num_classes=params['num_classes']).to(device)
     print('Number of model parameters:', sum(p.numel() for p in model.parameters() if p.requires_grad))
 
     if mode == 'metric':
@@ -342,7 +318,6 @@ if __name__ == '__main__':
     initialization(42)
     current_time = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")  
     model_name = 'CustomModel'
-    #model_name = 'MiniInceptionTimeV1'
     #save_model_path = f'logs/{current_time}_{model_name}'
     save_model_path = 'F:/Ky2nam3/do_an_1/ECG_Classification/logs/2024-09-02_20_36_26_CustomModel'
     init_dir(save_model_path)
