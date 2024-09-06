@@ -1,0 +1,20 @@
+{
+    "in_length": 320,
+    "fs": 360,
+    "in_channels": 1,
+    "num_classes": 5,
+    "first_width": 4,
+    "learning_rate_1": 0.00001,
+    "learning_rate_2": 0.00001,
+    "batch_size_train": 20,
+    "batch_size_val": 5,
+    "batch_size_test": 5,
+    "epochs": 100,
+    "dilation": 100,
+    "train_labels_csv": "F:/Ky2nam3/do_an_1/ECG_Classification/train_test/train_data.csv",
+    "test_labels_csv": "F:/Ky2nam3/do_an_1/ECG_Classification/train_test/test_data.csv",
+    "val_labels_csv": "F:/Ky2nam3/do_an_1/ECG_Classification/train_test/test_data.csv",
+    "data_dir": "F:/Ky2nam3/do_an_1/ECG_Classification/dataset",
+    "pre_train": true,
+    "dict_label": {"N": 0, "L": 1, "R": 2, "V": 3, "A":  4}
+}
